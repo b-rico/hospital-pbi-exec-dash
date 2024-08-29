@@ -1,4 +1,4 @@
-# ETHOS Power BI Dashboard Project
+# Hospital Executive Dash Power BI Dashboard Project
 
 ## Overview
 
