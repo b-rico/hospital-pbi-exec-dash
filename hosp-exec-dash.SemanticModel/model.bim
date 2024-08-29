@@ -1,0 +1,3876 @@
+{
+  "compatibilityLevel": 1550,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"DEPTDIM_TABLE\",\"HOSPDIM_TABLE\",\"PATIENTFACT_TABLE\",\"REVENUEFACT_TABLE\",\"Date\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.132.1053.0 (24.08)"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Entities": {
+              "date": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Date"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "date": {
+                      "State": "Generated",
+                      "Weight": 0.87
+                    }
+                  },
+                  {
+                    "moment": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "period": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  }
+                ]
+              },
+              "date.date": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Date",
+                    "ConceptualProperty": "Date"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "date": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "moment": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "period": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "Reporting Period": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "date.date.variation.date_hierarchy": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Date",
+                    "Hierarchy": "Date Hierarchy",
+                    "VariationSet": "Variation",
+                    "VariationSource": "Date"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "date hierarchy": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  }
+                ]
+              },
+              "date.date.variation.date_hierarchy.day": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Date",
+                    "Hierarchy": "Date Hierarchy",
+                    "HierarchyLevel": "Day",
+                    "VariationSet": "Variation",
+                    "VariationSource": "Date"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "day": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "date day": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "moment day": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "period day": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  }
+                ]
+              },
+              "date.date.variation.date_hierarchy.month": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Date",
+                    "Hierarchy": "Date Hierarchy",
+                    "HierarchyLevel": "Month",
+                    "VariationSet": "Variation",
+                    "VariationSource": "Date"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "month": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "date month": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "date mth": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "mth": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "moment month": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "period month": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  }
+                ]
+              },
+              "date.date.variation.date_hierarchy.quarter": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Date",
+                    "Hierarchy": "Date Hierarchy",
+                    "HierarchyLevel": "Quarter",
+                    "VariationSet": "Variation",
+                    "VariationSource": "Date"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "quarter": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "date quarter": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "date qtr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.833
+                    }
+                  },
+                  {
+                    "qtr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.818
+                    }
+                  },
+                  {
+                    "moment quarter": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "period quarter": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  }
+                ]
+              },
+              "date.date.variation.date_hierarchy.year": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "Date",
+                    "Hierarchy": "Date Hierarchy",
+                    "HierarchyLevel": "Year",
+                    "VariationSet": "Variation",
+                    "VariationSource": "Date"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "year": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "date year": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "date yr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "yr": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "moment year": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "period year": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  }
+                ]
+              },
+              "deptdim_table": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "DEPTDIM_TABLE"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "deptdim table": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "DEPTDIM_TABLE": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "deptdim tabletop": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "deptdim bench": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "deptdim board": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "deptdim counter": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "deptdim stand": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "deptdim slab": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "deptdim desk": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "deptdim stall": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "deptdim table top": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "deptdim spreadsheet": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.475
+                    }
+                  }
+                ]
+              },
+              "deptdim_table.department_name": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "DEPTDIM_TABLE",
+                    "ConceptualProperty": "Department Name"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "department name": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "department": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "department nickname": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "department title": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "department label": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "department tag": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "subdivision": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "division": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "unit": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "section": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "branch": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "sector": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  }
+                ]
+              },
+              "deptdim_table.dept_ID": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "DEPTDIM_TABLE",
+                    "ConceptualProperty": "Dept ID"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "dept ID": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "dept identification": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "dept identity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "dept identifier": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "dept credential": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  }
+                ]
+              },
+              "deptdim_table.hospital_ID": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "DEPTDIM_TABLE",
+                    "ConceptualProperty": "Hospital ID"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "hospital ID": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "hospital": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "hospital identification": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "hospital identity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "hospital identifier": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "hospital credential": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "infirmary": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "hospice": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "sickbay": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "sanatorium": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "clinic": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  }
+                ],
+                "Visibility": {
+                  "Value": "Hidden"
+                }
+              },
+              "hospdim_table": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "HOSPDIM_TABLE"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "hospdim table": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "HOSPDIM_TABLE": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "hospdim tabletop": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "hospdim bench": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "hospdim board": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "hospdim counter": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "hospdim stand": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "hospdim slab": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "hospdim desk": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "hospdim stall": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "hospdim table top": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "hospdim spreadsheet": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.475
+                    }
+                  }
+                ]
+              },
+              "hospdim_table.group_number": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "HOSPDIM_TABLE",
+                    "ConceptualProperty": "Group Number"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "group number": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "group no": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "category number": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "organization number": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.6
+                    }
+                  },
+                  {
+                    "bracket number": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  },
+                  {
+                    "class number": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  },
+                  {
+                    "crew number": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  },
+                  {
+                    "team number": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  }
+                ]
+              },
+              "hospdim_table.hospital_ID": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "HOSPDIM_TABLE",
+                    "ConceptualProperty": "Hospital ID"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "hospital ID": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "hospital": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "hospital identification": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "hospital identity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "hospital identifier": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "hospital credential": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "infirmary": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "hospice": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "sickbay": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "sanatorium": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "clinic": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  }
+                ]
+              },
+              "hospdim_table.hospital_name": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "HOSPDIM_TABLE",
+                    "ConceptualProperty": "Hospital Name"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "hospital name": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "hospital": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "hospital nickname": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "hospital title": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "hospital label": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "hospital tag": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "infirmary": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "hospice": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "sickbay": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "sanatorium": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  },
+                  {
+                    "clinic": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.491
+                    }
+                  }
+                ]
+              },
+              "hospdim_table.state": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "HOSPDIM_TABLE",
+                    "ConceptualProperty": "State"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {},
+                  {
+                    "location": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "province": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "territory": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "nation": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "condition": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "country": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  }
+                ]
+              },
+              "patientfact_table": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "PATIENTFACT_TABLE"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "patientfact table": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "PATIENTFACT_TABLE": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "patientfact tabletop": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "patientfact bench": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "patientfact board": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "patientfact counter": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "patientfact stand": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "patientfact slab": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "patientfact desk": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "patientfact stall": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "patientfact table top": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "patientfact spreadsheet": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.475
+                    }
+                  }
+                ]
+              },
+              "patientfact_table.dept_ID": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "PATIENTFACT_TABLE",
+                    "ConceptualProperty": "Dept ID"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "dept ID": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "dept identification": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "dept identity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "dept identifier": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "dept credential": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  }
+                ],
+                "Visibility": {
+                  "Value": "Hidden"
+                }
+              },
+              "patientfact_table.local_date": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "PATIENTFACT_TABLE",
+                    "ConceptualProperty": "Local Date"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "local date": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "date": {
+                      "State": "Generated",
+                      "Weight": 0.7
+                    }
+                  },
+                  {
+                    "local moment": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "local period": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  }
+                ]
+              },
+              "patientfact_table.total_patient": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "PATIENTFACT_TABLE",
+                    "ConceptualProperty": "Total Patients"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "total patient": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "patient": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "aggregate patient": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  },
+                  {
+                    "overall patient": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  },
+                  {
+                    "enduring": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "persevering": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.476
+                    }
+                  },
+                  {
+                    "longsuffering": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  },
+                  {
+                    "long-suffering": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  },
+                  {
+                    "forbearing": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  },
+                  {
+                    "good-natured": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  },
+                  {
+                    "understanding": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.452
+                    }
+                  }
+                ]
+              },
+              "revenuefact_table": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "REVENUEFACT_TABLE"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "revenuefact table": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "REVENUEFACT_TABLE": {
+                      "State": "Generated",
+                      "Type": "Noun",
+                      "Weight": 0.99
+                    }
+                  },
+                  {
+                    "revenuefact tabletop": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.5
+                    }
+                  },
+                  {
+                    "revenuefact bench": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "revenuefact board": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "revenuefact counter": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "revenuefact stand": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "revenuefact slab": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "revenuefact desk": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "revenuefact stall": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "revenuefact table top": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.485
+                    }
+                  },
+                  {
+                    "revenuefact spreadsheet": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.475
+                    }
+                  }
+                ]
+              },
+              "revenuefact_table.dept_ID": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "REVENUEFACT_TABLE",
+                    "ConceptualProperty": "Dept ID"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "dept ID": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "dept identification": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "dept identity": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "dept identifier": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "dept credential": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  }
+                ],
+                "Visibility": {
+                  "Value": "Hidden"
+                }
+              },
+              "revenuefact_table.local_date": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "REVENUEFACT_TABLE",
+                    "ConceptualProperty": "Local Date"
+                  }
+                },
+                "SemanticType": "Time",
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "local date": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "date": {
+                      "State": "Generated",
+                      "Weight": 0.7
+                    }
+                  },
+                  {
+                    "local moment": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "local period": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  }
+                ]
+              },
+              "revenuefact_table.total_revenue": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "REVENUEFACT_TABLE",
+                    "ConceptualProperty": "Total Revenue"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "total revenue": {
+                      "State": "Generated"
+                    }
+                  },
+                  {
+                    "revenue": {
+                      "State": "Generated",
+                      "Weight": 0.97
+                    }
+                  },
+                  {
+                    "total income": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.75
+                    }
+                  },
+                  {
+                    "income": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.736
+                    }
+                  },
+                  {
+                    "total profit": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "total turnover": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "total yield": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.727
+                    }
+                  },
+                  {
+                    "profit": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "turnover": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "yield": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.714
+                    }
+                  },
+                  {
+                    "aggregate revenue": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  },
+                  {
+                    "overall revenue": {
+                      "Source": {
+                        "Agent": "Thesaurus"
+                      },
+                      "State": "Suggested",
+                      "Type": "Noun",
+                      "Weight": 0.582
+                    }
+                  }
+                ]
+              }
+            },
+            "Language": "en-US",
+            "Relationships": {
+              "date_date_has_variation_date_hierarchy": {
+                "Binding": {
+                  "ConceptualEntity": "Date"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "date.date.variation.date_hierarchy"
+                      },
+                      "Subject": {
+                        "Role": "date.date"
+                      }
+                    },
+                    "ID": "dates_have_date_hierarchies",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "date.date": {
+                    "Target": {
+                      "Entity": "date.date"
+                    }
+                  },
+                  "date.date.variation.date_hierarchy": {
+                    "Target": {
+                      "Entity": "date.date.variation.date_hierarchy"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "date_date_variation_date_hierarchy_has_day": {
+                "Binding": {
+                  "ConceptualEntity": "Date"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "date.date.variation.date_hierarchy.day"
+                      },
+                      "Subject": {
+                        "Role": "date.date.variation.date_hierarchy"
+                      }
+                    },
+                    "ID": "date_hierarchies_have_days",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "date.date.variation.date_hierarchy": {
+                    "Target": {
+                      "Entity": "date.date.variation.date_hierarchy"
+                    }
+                  },
+                  "date.date.variation.date_hierarchy.day": {
+                    "Target": {
+                      "Entity": "date.date.variation.date_hierarchy.day"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "date_date_variation_date_hierarchy_has_month": {
+                "Binding": {
+                  "ConceptualEntity": "Date"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "date.date.variation.date_hierarchy.month"
+                      },
+                      "Subject": {
+                        "Role": "date.date.variation.date_hierarchy"
+                      }
+                    },
+                    "ID": "date_hierarchies_have_months",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "date.date.variation.date_hierarchy": {
+                    "Target": {
+                      "Entity": "date.date.variation.date_hierarchy"
+                    }
+                  },
+                  "date.date.variation.date_hierarchy.month": {
+                    "Target": {
+                      "Entity": "date.date.variation.date_hierarchy.month"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "date_date_variation_date_hierarchy_has_quarter": {
+                "Binding": {
+                  "ConceptualEntity": "Date"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "date.date.variation.date_hierarchy.quarter"
+                      },
+                      "Subject": {
+                        "Role": "date.date.variation.date_hierarchy"
+                      }
+                    },
+                    "ID": "date_hierarchies_have_quarters",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "date.date.variation.date_hierarchy": {
+                    "Target": {
+                      "Entity": "date.date.variation.date_hierarchy"
+                    }
+                  },
+                  "date.date.variation.date_hierarchy.quarter": {
+                    "Target": {
+                      "Entity": "date.date.variation.date_hierarchy.quarter"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "date_date_variation_date_hierarchy_has_year": {
+                "Binding": {
+                  "ConceptualEntity": "Date"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "date.date.variation.date_hierarchy.year"
+                      },
+                      "Subject": {
+                        "Role": "date.date.variation.date_hierarchy"
+                      }
+                    },
+                    "ID": "date_hierarchies_have_years",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "date.date.variation.date_hierarchy": {
+                    "Target": {
+                      "Entity": "date.date.variation.date_hierarchy"
+                    }
+                  },
+                  "date.date.variation.date_hierarchy.year": {
+                    "Target": {
+                      "Entity": "date.date.variation.date_hierarchy.year"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "date_has_date": {
+                "Binding": {
+                  "ConceptualEntity": "Date"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "date.date"
+                      },
+                      "Subject": {
+                        "Role": "date"
+                      }
+                    },
+                    "ID": "dates_have_dates",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "date": {
+                    "Target": {
+                      "Entity": "date"
+                    }
+                  },
+                  "date.date": {
+                    "Target": {
+                      "Entity": "date.date"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "deptdim_table_has_department_name": {
+                "Binding": {
+                  "ConceptualEntity": "DEPTDIM_TABLE"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "deptdim_table.department_name"
+                      },
+                      "Subject": {
+                        "Role": "deptdim_table"
+                      }
+                    },
+                    "ID": "deptdim_tables_have_department_names",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "deptdim_table": {
+                    "Target": {
+                      "Entity": "deptdim_table"
+                    }
+                  },
+                  "deptdim_table.department_name": {
+                    "Target": {
+                      "Entity": "deptdim_table.department_name"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "deptdim_table_has_dept_ID": {
+                "Binding": {
+                  "ConceptualEntity": "DEPTDIM_TABLE"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "deptdim_table.dept_ID"
+                      },
+                      "Subject": {
+                        "Role": "deptdim_table"
+                      }
+                    },
+                    "ID": "deptdim_tables_have_dept_ID",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "deptdim_table": {
+                    "Target": {
+                      "Entity": "deptdim_table"
+                    }
+                  },
+                  "deptdim_table.dept_ID": {
+                    "Target": {
+                      "Entity": "deptdim_table.dept_ID"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "deptdim_table_has_hospdim_table": {
+                "Binding": {
+                  "ConceptualEntity": "DEPTDIM_TABLE"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "hospdim_table"
+                      },
+                      "Subject": {
+                        "Role": "deptdim_table"
+                      }
+                    },
+                    "ID": "deptdim_tables_have_hospdim_tables",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "deptdim_table"
+                      },
+                      "Subject": {
+                        "Role": "hospdim_table"
+                      }
+                    },
+                    "ID": "hospdim_tables_have_deptdim_tables",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "deptdim_table": {
+                    "Target": {
+                      "Entity": "deptdim_table"
+                    }
+                  },
+                  "hospdim_table": {
+                    "Nouns": [
+                      {
+                        "hospital": {
+                          "State": "Generated"
+                        }
+                      }
+                    ],
+                    "Target": {
+                      "Entity": "hospdim_table"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "hospdim_table_has_group_number": {
+                "Binding": {
+                  "ConceptualEntity": "HOSPDIM_TABLE"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "hospdim_table.group_number"
+                      },
+                      "Subject": {
+                        "Role": "hospdim_table"
+                      }
+                    },
+                    "ID": "hospdim_tables_have_group_numbers",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "hospdim_table": {
+                    "Target": {
+                      "Entity": "hospdim_table"
+                    }
+                  },
+                  "hospdim_table.group_number": {
+                    "Target": {
+                      "Entity": "hospdim_table.group_number"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "hospdim_table_has_hospital_ID": {
+                "Binding": {
+                  "ConceptualEntity": "HOSPDIM_TABLE"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "hospdim_table.hospital_ID"
+                      },
+                      "Subject": {
+                        "Role": "hospdim_table"
+                      }
+                    },
+                    "ID": "hospdim_tables_have_hospital_ID",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "hospdim_table": {
+                    "Target": {
+                      "Entity": "hospdim_table"
+                    }
+                  },
+                  "hospdim_table.hospital_ID": {
+                    "Target": {
+                      "Entity": "hospdim_table.hospital_ID"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "hospdim_table_has_hospital_name": {
+                "Binding": {
+                  "ConceptualEntity": "HOSPDIM_TABLE"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "hospdim_table.hospital_name"
+                      },
+                      "Subject": {
+                        "Role": "hospdim_table"
+                      }
+                    },
+                    "ID": "hospdim_tables_have_hospital_names",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "hospdim_table": {
+                    "Target": {
+                      "Entity": "hospdim_table"
+                    }
+                  },
+                  "hospdim_table.hospital_name": {
+                    "Target": {
+                      "Entity": "hospdim_table.hospital_name"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "hospdim_table_has_state": {
+                "Binding": {
+                  "ConceptualEntity": "HOSPDIM_TABLE"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "hospdim_table.state"
+                      },
+                      "Subject": {
+                        "Role": "hospdim_table"
+                      }
+                    },
+                    "ID": "hospdim_tables_have_states",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "hospdim_table": {
+                    "Target": {
+                      "Entity": "hospdim_table"
+                    }
+                  },
+                  "hospdim_table.state": {
+                    "Target": {
+                      "Entity": "hospdim_table.state"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "hospdim_table_in_state": {
+                "Binding": {
+                  "ConceptualEntity": "HOSPDIM_TABLE"
+                },
+                "Phrasings": [
+                  {
+                    "ID": "hospdim_tables_are_in_states",
+                    "Preposition": {
+                      "Object": {
+                        "Role": "hospdim_table.state"
+                      },
+                      "Prepositions": [
+                        {
+                          "in": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Subject": {
+                        "Role": "hospdim_table"
+                      }
+                    },
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "hospdim_table": {
+                    "Target": {
+                      "Entity": "hospdim_table"
+                    }
+                  },
+                  "hospdim_table.state": {
+                    "Target": {
+                      "Entity": "hospdim_table.state"
+                    }
+                  }
+                },
+                "SemanticSlots": {
+                  "Where": {
+                    "Role": "hospdim_table.state"
+                  }
+                },
+                "State": "Generated"
+              },
+              "patientfact_table_has_date": {
+                "Binding": {
+                  "ConceptualEntity": "PATIENTFACT_TABLE"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "date"
+                      },
+                      "Subject": {
+                        "Role": "patientfact_table"
+                      }
+                    },
+                    "ID": "patientfact_tables_have_dates",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "patientfact_table"
+                      },
+                      "Subject": {
+                        "Role": "date"
+                      }
+                    },
+                    "ID": "dates_have_patientfact_tables",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "date": {
+                    "Target": {
+                      "Entity": "date"
+                    }
+                  },
+                  "patientfact_table": {
+                    "Target": {
+                      "Entity": "patientfact_table"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "patientfact_table_has_deptdim_table": {
+                "Binding": {
+                  "ConceptualEntity": "PATIENTFACT_TABLE"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "deptdim_table"
+                      },
+                      "Subject": {
+                        "Role": "patientfact_table"
+                      }
+                    },
+                    "ID": "patientfact_tables_have_deptdim_tables",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "patientfact_table"
+                      },
+                      "Subject": {
+                        "Role": "deptdim_table"
+                      }
+                    },
+                    "ID": "deptdim_tables_have_patientfact_tables",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "deptdim_table": {
+                    "Target": {
+                      "Entity": "deptdim_table"
+                    }
+                  },
+                  "patientfact_table": {
+                    "Target": {
+                      "Entity": "patientfact_table"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "patientfact_table_has_local_date": {
+                "Binding": {
+                  "ConceptualEntity": "PATIENTFACT_TABLE"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "patientfact_table.local_date"
+                      },
+                      "Subject": {
+                        "Role": "patientfact_table"
+                      }
+                    },
+                    "ID": "patientfact_tables_have_local_dates",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "patientfact_table": {
+                    "Target": {
+                      "Entity": "patientfact_table"
+                    }
+                  },
+                  "patientfact_table.local_date": {
+                    "Target": {
+                      "Entity": "patientfact_table.local_date"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "patientfact_table_has_total_patient": {
+                "Binding": {
+                  "ConceptualEntity": "PATIENTFACT_TABLE"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "patientfact_table.total_patient"
+                      },
+                      "Subject": {
+                        "Role": "patientfact_table"
+                      }
+                    },
+                    "ID": "patientfact_tables_have_total_patients",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "patientfact_table": {
+                    "Target": {
+                      "Entity": "patientfact_table"
+                    }
+                  },
+                  "patientfact_table.total_patient": {
+                    "Target": {
+                      "Entity": "patientfact_table.total_patient"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "revenuefact_table_has_date": {
+                "Binding": {
+                  "ConceptualEntity": "REVENUEFACT_TABLE"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "date"
+                      },
+                      "Subject": {
+                        "Role": "revenuefact_table"
+                      }
+                    },
+                    "ID": "revenuefact_tables_have_dates",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "revenuefact_table"
+                      },
+                      "Subject": {
+                        "Role": "date"
+                      }
+                    },
+                    "ID": "dates_have_revenuefact_tables",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "date": {
+                    "Target": {
+                      "Entity": "date"
+                    }
+                  },
+                  "revenuefact_table": {
+                    "Target": {
+                      "Entity": "revenuefact_table"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "revenuefact_table_has_deptdim_table": {
+                "Binding": {
+                  "ConceptualEntity": "REVENUEFACT_TABLE"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "deptdim_table"
+                      },
+                      "Subject": {
+                        "Role": "revenuefact_table"
+                      }
+                    },
+                    "ID": "revenuefact_tables_have_deptdim_tables",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "revenuefact_table"
+                      },
+                      "Subject": {
+                        "Role": "deptdim_table"
+                      }
+                    },
+                    "ID": "deptdim_tables_have_revenuefact_tables",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "deptdim_table": {
+                    "Target": {
+                      "Entity": "deptdim_table"
+                    }
+                  },
+                  "revenuefact_table": {
+                    "Target": {
+                      "Entity": "revenuefact_table"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "revenuefact_table_has_local_date": {
+                "Binding": {
+                  "ConceptualEntity": "REVENUEFACT_TABLE"
+                },
+                "Phrasings": [
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "revenuefact_table.local_date"
+                      },
+                      "Subject": {
+                        "Role": "revenuefact_table"
+                      }
+                    },
+                    "ID": "revenuefact_tables_have_local_dates",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "revenuefact_table": {
+                    "Target": {
+                      "Entity": "revenuefact_table"
+                    }
+                  },
+                  "revenuefact_table.local_date": {
+                    "Target": {
+                      "Entity": "revenuefact_table.local_date"
+                    }
+                  }
+                },
+                "State": "Generated"
+              },
+              "revenuefact_table_is_expensive": {
+                "Binding": {
+                  "ConceptualEntity": "REVENUEFACT_TABLE"
+                },
+                "Phrasings": [
+                  {
+                    "Adjective": {
+                      "Adjectives": [
+                        {
+                          "expensive": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Antonyms": [
+                        {
+                          "cheap": {
+                            "State": "Generated"
+                          }
+                        }
+                      ],
+                      "Measurement": {
+                        "Role": "revenuefact_table.total_revenue"
+                      },
+                      "Subject": {
+                        "Role": "revenuefact_table"
+                      }
+                    },
+                    "ID": "total_revenue_indicates_how_expensive_revenuefact_tables_are",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  },
+                  {
+                    "Attribute": {
+                      "Object": {
+                        "Role": "revenuefact_table.total_revenue"
+                      },
+                      "Subject": {
+                        "Role": "revenuefact_table"
+                      }
+                    },
+                    "ID": "revenuefact_tables_have_total_revenues",
+                    "State": "Generated",
+                    "Weight": 0.99
+                  }
+                ],
+                "Roles": {
+                  "revenuefact_table": {
+                    "Target": {
+                      "Entity": "revenuefact_table"
+                    }
+                  },
+                  "revenuefact_table.total_revenue": {
+                    "Target": {
+                      "Entity": "revenuefact_table.total_revenue"
+                    }
+                  }
+                },
+                "State": "Generated"
+              }
+            },
+            "Version": "3.5.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "AutoDetected_832cf9a3-ff28-4826-b9b1-d81554e4a1e1",
+        "fromColumn": "Hospital ID",
+        "fromTable": "DEPTDIM_TABLE",
+        "toColumn": "Hospital ID",
+        "toTable": "HOSPDIM_TABLE"
+      },
+      {
+        "name": "51c800c9-0914-015c-b836-a7ab9e18b458",
+        "fromColumn": "Dept ID",
+        "fromTable": "PATIENTFACT_TABLE",
+        "toColumn": "Dept ID",
+        "toTable": "DEPTDIM_TABLE"
+      },
+      {
+        "name": "5d810452-b744-befb-9520-a68520a4e5d6",
+        "fromColumn": "Dept ID",
+        "fromTable": "REVENUEFACT_TABLE",
+        "toColumn": "Dept ID",
+        "toTable": "DEPTDIM_TABLE"
+      },
+      {
+        "name": "5f5a8426-5504-9f4b-895c-eaf1185b9c50",
+        "fromColumn": "Local Date",
+        "fromTable": "PATIENTFACT_TABLE",
+        "toColumn": "Date",
+        "toTable": "Date"
+      },
+      {
+        "name": "6d4c530f-f655-f750-1684-824e6d7e62b3",
+        "fromColumn": "Local Date",
+        "fromTable": "REVENUEFACT_TABLE",
+        "toColumn": "Date",
+        "toTable": "Date"
+      },
+      {
+        "name": "ea657f49-42ee-49d4-87e1-2cff61dbbe9f",
+        "fromColumn": "Date",
+        "fromTable": "Date",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_52f0c618-df22-4027-a02a-8ef3a991d3fd"
+      }
+    ],
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "DEPTDIM_TABLE",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Dept ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f30cb6a8-7134-451a-86e1-f6bbee138130",
+            "sourceColumn": "Dept ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Department Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "22dab5bd-5ddb-4c9b-b928-5b847b9548d7",
+            "sourceColumn": "Department Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Hospital ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d08b81a5-5ab3-454d-b002-c65d9210f718",
+            "sourceColumn": "Hospital ID",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "177f43b8-7fc2-4b30-9b22-8c911d60cc92",
+        "partitions": [
+          {
+            "name": "DEPTDIM_TABLE",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(\"C:\\Users\\BertRico\\ByteWise Analytics Dropbox\\Bert Rico\\PC\\Downloads\\SKILLS_TEST_FINAL\\SKILLS_TEST_FINAL\\DEPTDIM_TABLE.csv\"),[Delimiter=\",\", Columns=3, Encoding=65001, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"SOURCE_ID\", Int64.Type}, {\"DEPARTMENT_NAME\", type text}, {\"HFSOURCE\", Int64.Type}}),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Changed Type\",{{\"SOURCE_ID\", \"Dept ID\"}, {\"HFSOURCE\", \"Hospital ID\"}, {\"DEPARTMENT_NAME\", \"Department Name\"}})",
+                "in",
+                "    #\"Renamed Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DateTableTemplate_aeeecb46-8ea7-4654-a1d9-d8826a52354c",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "99d68e74-5baf-48de-9b88-f2c2fcb6a918",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "cb540ed1-6f37-42dc-a2c5-d9171345fd94",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "e6a4013e-ae55-4a8d-8631-c13fdf1fb1c6",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "2e9c6266-1995-4930-8326-688bbcc7b7c8",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "06e40795-5371-4b78-b7b5-99627856e922",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "d029fede-7652-4bbd-87c6-a8c07b132174",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "8a5d2246-6450-4066-bc4d-107fc5bb9fd4",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "64810df4-b79f-4f5b-9c05-25582e6851db",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "919cf1dd-3fe6-4d41-be7f-428e2618f327",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "a145ee7c-9421-4dc1-a50a-2718f6cbdf8c",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "fc31e610-aa0a-4a58-b75f-7aaecd28a182",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "c9441e2d-bfbe-4683-89cc-fd5a29ab762c"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "a2bd4572-5fc0-4401-b6fb-cfaee9924717",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_aeeecb46-8ea7-4654-a1d9-d8826a52354c",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "HOSPDIM_TABLE",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Group Number",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "864ffca4-b01c-47e6-9013-e43c2d6a5056",
+            "sourceColumn": "Group Number",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Hospital Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "45d8df14-e58b-4ed0-8649-d76e3ebfea97",
+            "sourceColumn": "Hospital Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Hospital ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "476bffc8-0063-4496-9675-db0af0fe47e8",
+            "sourceColumn": "Hospital ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "State",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "86cfd448-c685-4c5f-9b88-6fd9acbe198f",
+            "sourceColumn": "State",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "e1bef510-229f-4177-9d3d-9039243e23e0",
+        "partitions": [
+          {
+            "name": "HOSPDIM_TABLE",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(\"C:\\Users\\BertRico\\ByteWise Analytics Dropbox\\Bert Rico\\PC\\Downloads\\SKILLS_TEST_FINAL\\SKILLS_TEST_FINAL\\HOSPDIM_TABLE.csv\"),[Delimiter=\",\", Columns=4, Encoding=65001, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"GROUPN\", Int64.Type}, {\"HOSPITAL_NAME\", type text}, {\"HFSOURCE\", Int64.Type}, {\"STATE\", type text}}),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Changed Type\",{{\"GROUPN\", \"Group Number\"}, {\"HFSOURCE\", \"Hospital ID\"}, {\"HOSPITAL_NAME\", \"Hospital Name\"}, {\"STATE\", \"State\"}})",
+                "in",
+                "    #\"Renamed Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "PATIENTFACT_TABLE",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Local Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "c63131f1-934b-4567-b43c-be3dfdcb4450",
+            "sourceColumn": "Local Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Total Patients",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "#,0",
+            "lineageTag": "07641d4e-7411-4c8d-bb9f-8453ae32ab7d",
+            "sourceColumn": "Total Patients",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Dept ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d94b3170-c2f3-4293-9ec0-1fe975a2a810",
+            "sourceColumn": "Dept ID",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "2205bd63-b644-43ca-8fa7-461aa08ea9f8",
+        "measures": [
+          {
+            "name": "2023 Pat. Volume Over Period",
+            "expression": [
+              "",
+              "VAR MaxMonth2024 = [Max Month 2024]",
+              "RETURN ",
+              "CALCULATE(",
+              "    SUM('PATIENTFACT_TABLE'[Total Patients]),",
+              "    FILTER(",
+              "        ALL('Date'),",
+              "        'Date'[Year] = 2023 && ",
+              "        'Date'[Month] <= MaxMonth2024",
+              "    )",
+              ")"
+            ],
+            "formatString": "0",
+            "lineageTag": "02238604-b995-414c-83c7-a0ba763b969a"
+          },
+          {
+            "name": "2023 Total Pat. Volume",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    SUM('PATIENTFACT_TABLE'[Total Patients]),",
+              "    FILTER(",
+              "        ALL('Date'),",
+              "        'Date'[Year] = 2023",
+              "    )",
+              ")"
+            ],
+            "formatString": "0",
+            "lineageTag": "d3147057-71aa-40be-b031-0cb7ee6ead93"
+          },
+          {
+            "name": "2024 Total Pat. Volume",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    SUM('PATIENTFACT_TABLE'[Total Patients]),",
+              "    FILTER(",
+              "        ALL('Date'),",
+              "        'Date'[Year] = 2024",
+              "    )",
+              ")"
+            ],
+            "formatString": "0",
+            "lineageTag": "45427f1b-663b-46ac-ae9c-7e608f68637c"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "PATIENTFACT_TABLE",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(\"C:\\Users\\BertRico\\ByteWise Analytics Dropbox\\Bert Rico\\PC\\Downloads\\SKILLS_TEST_FINAL\\SKILLS_TEST_FINAL\\PATIENTFACT_TABLE.csv\"),[Delimiter=\",\", Columns=3, Encoding=65001, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"LOCAL_DATE\", type date}, {\"TOTAL_PATIENTS\", Int64.Type}, {\"DEPT_SOURCEID\", Int64.Type}}),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Changed Type\",{{\"DEPT_SOURCEID\", \"Dept ID\"}, {\"LOCAL_DATE\", \"Local Date\"}, {\"TOTAL_PATIENTS\", \"Total Patients\"}})",
+                "in",
+                "    #\"Renamed Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "REVENUEFACT_TABLE",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Dept ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8ea4db39-ff3b-44b0-8577-321ccba93f51",
+            "sourceColumn": "Dept ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Local Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Short Date",
+            "lineageTag": "e8d4e02c-a77a-42f7-b8ff-e99fe6dd2228",
+            "sourceColumn": "Local Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Total Revenue",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "double",
+            "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+            "lineageTag": "df9f1b5e-1eb9-4b96-9656-4638d708eb32",
+            "sourceColumn": "Total Revenue",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "85e56222-6456-4ded-8a37-fc7a203546f0",
+        "measures": [
+          {
+            "name": "2023 Revenue Over Period",
+            "expression": [
+              "",
+              "VAR MaxMonth2024 = [Max Month 2024]",
+              "RETURN ",
+              "CALCULATE(",
+              "    SUM('REVENUEFACT_TABLE'[Total Revenue]),",
+              "    FILTER(",
+              "        ALL('Date'),",
+              "        'Date'[Year] = 2023 && ",
+              "        'Date'[Month] <= MaxMonth2024",
+              "    )",
+              ")"
+            ],
+            "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+            "lineageTag": "08633e8c-eac2-4038-8441-6f0b1f716775"
+          },
+          {
+            "name": "2024 Total Revenue",
+            "expression": [
+              "",
+              "CALCULATE (",
+              "    SUM('REVENUEFACT_TABLE'[Total Revenue]),",
+              "    'Date'[Year] = 2024",
+              ")"
+            ],
+            "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+            "lineageTag": "b8440fbb-7d61-4625-94f6-b84ea6b9eccc"
+          },
+          {
+            "name": "Revenue YoY Variance",
+            "expression": [
+              "",
+              "[2024 Total Revenue] - [2023 Revenue Over Period]"
+            ],
+            "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+            "lineageTag": "5ca21244-78df-4d3d-bf04-7948f6468c97"
+          },
+          {
+            "name": "Revenue YoY Growth %",
+            "expression": [
+              "",
+              "DIVIDE(",
+              "    [Revenue YoY Variance],",
+              "    [2023 Revenue Over Period],",
+              "    0",
+              ")",
+              ""
+            ],
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "a01c43a3-2d2e-488a-ab75-e4cdefa48d2d"
+          },
+          {
+            "name": "Max Month 2024",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    MAX('Date'[Month]),",
+              "    'Date'[Year] = 2024",
+              ")",
+              ""
+            ],
+            "lineageTag": "254b2a77-44bb-436c-bd07-3afade95e806"
+          },
+          {
+            "name": "Data Through",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    MAX('Date'[Date])",
+              ")",
+              ""
+            ],
+            "formatString": "Short Date",
+            "lineageTag": "6f685723-0a43-474c-8078-377199c4029d"
+          },
+          {
+            "name": "2023 Total Revenue",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    SUM('REVENUEFACT_TABLE'[Total Revenue]),",
+              "    FILTER(",
+              "        ALL('Date'),",
+              "        'Date'[Year] = 2023",
+              "    )",
+              ")"
+            ],
+            "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+            "lineageTag": "57c090a0-9e8d-466d-b6ce-bf057f05ac8f"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "REVENUEFACT_TABLE",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(\"C:\\Users\\BertRico\\ByteWise Analytics Dropbox\\Bert Rico\\PC\\Downloads\\SKILLS_TEST_FINAL\\SKILLS_TEST_FINAL\\REVENUEFACT_TABLE.csv\"),[Delimiter=\",\", Columns=3, Encoding=65001, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"DEPT_SOURCEID\", Int64.Type}, {\"LOCAL_DATE\", type date}, {\"TOTAL_REVENUE\", type number}}),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Changed Type\",{{\"TOTAL_REVENUE\", \"Total Revenue\"}, {\"LOCAL_DATE\", \"Local Date\"}, {\"DEPT_SOURCEID\", \"Dept ID\"}})",
+                "in",
+                "    #\"Renamed Columns\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Date",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "6712999a-865c-4ca9-a5fc-e263d189dc7d",
+            "sourceColumn": "Date",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_52f0c618-df22-4027-a02a-8ef3a991d3fd"
+                },
+                "isDefault": true,
+                "relationship": "ea657f49-42ee-49d4-87e1-2cff61dbbe9f"
+              }
+            ]
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a247a73d-2c57-40bc-ad3a-99f220090851",
+            "sourceColumn": "Year",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "12829ca0-9c79-4301-9bf5-32b4ebc62fb9",
+            "sourceColumn": "Month",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "c288a207-45d8-4d4b-89a8-3e937a425ab1",
+        "partitions": [
+          {
+            "name": "Date",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i44FAA==\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),",
+                "    #\"Changed M Query to Table\" = let",
+                "    // Step 1: Reference the REVENUEFACT_TABLE",
+                "    RevenueFact = #\"REVENUEFACT_TABLE\", ",
+                "",
+                "    // Step 2: Get the minimum date from the REVENUEFACT_TABLE",
+                "    MinDate = Record.Field(",
+                "        Table.Min(RevenueFact, \"Local Date\"),",
+                "        \"Local Date\"",
+                "    ),",
+                "    ",
+                "    // Step 3: Get the maximum date from the REVENUEFACT_TABLE",
+                "    MaxDate = Record.Field(",
+                "        Table.Max(RevenueFact, \"Local Date\"),",
+                "        \"Local Date\"",
+                "    ),",
+                "",
+                "    // Step 4: Generate a list of dates from MinDate to MaxDate",
+                "    DateList = List.Dates(",
+                "        MinDate, ",
+                "        Duration.Days(MaxDate - MinDate) + 1, ",
+                "        #duration(1, 0, 0, 0)",
+                "    ),",
+                "",
+                "    // Step 5: Convert the list to a table",
+                "    #\"Converted to Table\" = Table.FromList(DateList, Splitter.SplitByNothing(), null, null, ExtraValues.Error),",
+                "",
+                "    // Step 6: Rename the column to \"Date\" and change the type to date",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Converted to Table\",{{\"Column1\", type date}}),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Changed Type\",{{\"Column1\", \"Date\"}})",
+                "in",
+                "    #\"Renamed Columns\",",
+                "    #\"Added Year Field\" = Table.AddColumn(#\"Changed M Query to Table\", \"Year\", each Date.Year([Date])),",
+                "    #\"Changed Year to Num\" = Table.TransformColumnTypes(#\"Added Year Field\",{{\"Year\", Int64.Type}}),",
+                "    #\"Added Month Field\" = Table.AddColumn(#\"Changed Year to Num\", \"Month\", each Date.Month([Date])),",
+                "    #\"Changed Month to Num\" = Table.TransformColumnTypes(#\"Added Month Field\",{{\"Month\", Int64.Type}})",
+                "in",
+                "    #\"Changed Month to Num\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_52f0c618-df22-4027-a02a-8ef3a991d3fd",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "d3aa1b27-8ac2-443c-96ea-9d07fa1904cd",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "c5f1f22d-cfb6-427d-801c-7a53b0c0be8d",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "8b654f03-5f9f-4c4f-9ac2-eedf51717a12",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "af9742b6-f5cd-405e-bb4f-7d970e7c938d",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "2e101f2d-da15-4a53-a4f6-86afc2f80fb7",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "19f53a63-97e6-499a-83b3-0f7e2fe0d55f",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "2ae0872e-c2e1-4c9c-807c-0ae075465d46",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "ff815381-71b1-4880-ba58-fd2eb990fec4",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "06e71b2f-4658-44d8-a5f5-2abfae7f8b96",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "b8f24be7-9b41-4aa8-bdd2-dd257319538f",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "1bfd346a-3146-4127-a42e-6f4724fd50de",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "6739227e-4070-4978-8e7f-13e37d6e8bad"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "51f49e5f-113b-4e1b-82c1-4fa6881cee16",
+        "partitions": [
+          {
+            "name": "LocalDateTable_52f0c618-df22-4027-a02a-8ef3a991d3fd",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('Date'[Date])), 1, 1), Date(Year(MAX('Date'[Date])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      }
+    ]
+  }
+}

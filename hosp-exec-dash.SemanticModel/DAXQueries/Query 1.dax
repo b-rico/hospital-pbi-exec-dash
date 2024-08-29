@@ -1,0 +1,8 @@
+CALCULATE(
+    SUM('REVENUEFACT_TABLE'[Total Revenue]),
+    FILTER(
+        ALL('DateTable'),
+        'DateTable'[Year] = 2023 && 
+        'DateTable'[Date] <= MAX('DateTable'[Date])
+    )
+)

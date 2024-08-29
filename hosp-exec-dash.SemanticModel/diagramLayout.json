@@ -1,0 +1,87 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 305,
+            "y": 266
+          },
+          "nodeIndex": "DEPTDIM_TABLE",
+          "nodeLineageTag": "177f43b8-7fc2-4b30-9b22-8c911d60cc92",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "HOSPDIM_TABLE",
+          "nodeLineageTag": "e1bef510-229f-4177-9d3d-9039243e23e0",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 727,
+            "y": 0
+          },
+          "nodeIndex": "PATIENTFACT_TABLE",
+          "nodeLineageTag": "2205bd63-b644-43ca-8fa7-461aa08ea9f8",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 724,
+            "y": 201
+          },
+          "nodeIndex": "REVENUEFACT_TABLE",
+          "nodeLineageTag": "85e56222-6456-4ded-8a37-fc7a203546f0",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 1053,
+            "y": 134
+          },
+          "nodeIndex": "Date",
+          "nodeLineageTag": "c288a207-45d8-4d4b-89a8-3e937a425ab1",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

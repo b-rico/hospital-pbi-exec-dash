@@ -1,0 +1,596 @@
+{
+  "config": "{\"version\":\"5.57\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU08\",\"version\":\"5.57\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "ACME_Hospitals_(1)9941869980320883.png",
+            "path": "ACME_Hospitals_(1)9941869980320883.png",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU08",
+            "path": "BaseThemes/CY24SU08.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"relationships\":[{\"source\":\"1267b4f520509b9e1c57\",\"target\":\"d5faff746350868c3600\",\"type\":1}],\"objects\":{\"outspacePane\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"187L\"}}}}}]}}",
+      "displayName": "Regional Dashboard",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "005175bce55d8d0b2053",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0aaf311302e303b93714\",\"layouts\":[{\"id\":0,\"position\":{\"x\":216.63425989319458,\"y\":432.2168971655484,\"z\":3000,\"width\":1064.2420922908393,\"height\":287.09297548952486,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"ribbonChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Date.Date.Variation.Date Hierarchy.Year\",\"active\":true},{\"queryRef\":\"Date.Date.Variation.Date Hierarchy.Quarter\",\"active\":true},{\"queryRef\":\"Date.Date.Variation.Date Hierarchy.Month\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(REVENUEFACT_TABLE.Total Revenue)\"}],\"Series\":[{\"queryRef\":\"HOSPDIM_TABLE.Hospital Name\"}],\"Tooltips\":[{\"queryRef\":\"Sum(PATIENTFACT_TABLE.Total Patients)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Date\",\"Type\":0},{\"Name\":\"r\",\"Entity\":\"REVENUEFACT_TABLE\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"HOSPDIM_TABLE\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"PATIENTFACT_TABLE\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"Date.Date.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"Date Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Quarter\"},\"Name\":\"Date.Date.Variation.Date Hierarchy.Quarter\",\"NativeReferenceName\":\"Date Quarter\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"Date.Date.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"Date Month\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Total Revenue\"}},\"Function\":0},\"Name\":\"Sum(REVENUEFACT_TABLE.Total Revenue)\",\"NativeReferenceName\":\"Sum of Total Revenue\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Hospital Name\"},\"Name\":\"HOSPDIM_TABLE.Hospital Name\",\"NativeReferenceName\":\"Hospital Name\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Total Patients\"}},\"Function\":0},\"Name\":\"Sum(PATIENTFACT_TABLE.Total Patients)\",\"NativeReferenceName\":\"Sum of Total Patients\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"legend\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'BottomCenter'\"}}},\"showTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Revenue Trend Line By Department'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Date\"}},\"Property\":\"Date\"}},\"type\":\"Categorical\",\"howCreated\":1,\"isHiddenInViewMode\":false},{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Date\"}},\"Property\":\"Date\"}},\"type\":\"Categorical\",\"howCreated\":1,\"isHiddenInViewMode\":false}]",
+          "height": 287.09,
+          "width": 1064.24,
+          "x": 216.63,
+          "y": 432.22,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"1267b4f520509b9e1c57\",\"layouts\":[{\"id\":0,\"position\":{\"x\":700.9497732523316,\"y\":103.97421636576253,\"z\":4000,\"width\":239.49117252788,\"height\":77.10447505775649,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"HOSPDIM_TABLE.STATE\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"HOSPDIM_TABLE\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"State\"},\"Name\":\"HOSPDIM_TABLE.STATE\",\"NativeReferenceName\":\"State\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"HOSPDIM_TABLE\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"State\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'CA'\"}}]]}}}]}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 77.10,
+          "width": 239.49,
+          "x": 700.95,
+          "y": 103.97,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"2bd42c4271314440910b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.516226208407504,\"y\":0,\"z\":11007,\"width\":72.56196083801177,\"height\":72.56196083801177,\"tabOrder\":11007}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"ACME_Hospitals_(1)9941869980320883.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 72.56,
+          "width": 72.56,
+          "x": 10.52,
+          "y": 0.00,
+          "z": 11007.00
+        },
+        {
+          "config": "{\"name\":\"358224b0085e8b2ea9bb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":585.7537998082979,\"z\":11003,\"width\":230.30535396412432,\"height\":59.94248938792277,\"tabOrder\":11003}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(PATIENTFACT_TABLE.Total Patients)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PATIENTFACT_TABLE\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Total Patients\"}},\"Function\":0},\"Name\":\"Sum(PATIENTFACT_TABLE.Total Patients)\",\"NativeReferenceName\":\"Total Patients Seen Over Period\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Total Patients\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(PATIENTFACT_TABLE.Total Patients)\":{\"displayName\":\"Total Patients Seen Over Period\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}}}],\"card\":[{\"properties\":{\"barColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 59.94,
+          "width": 230.31,
+          "x": 0.00,
+          "y": 585.75,
+          "z": 11003.00
+        },
+        {
+          "config": "{\"name\":\"39000b027bcdabae1001\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1279.5989795461667,\"height\":72.10729684166556,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 72.11,
+          "width": 1279.60,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"392931db107e7e7c4326\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1039.7421636576253,\"y\":98.13296825532643,\"z\":5000,\"width\":240.6594221499672,\"height\":82.94572316819259,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Date.Date\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Date\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Date\"},\"Name\":\"Date.Date\",\"NativeReferenceName\":\"Reporting Period\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Date\"}}}]},\"columnProperties\":{\"Date.Date\":{\"displayName\":\"Reporting Period\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Relative'\"}}},\"relativeRange\":{\"expr\":{\"Literal\":{\"Value\":\"'This'\"}}},\"relativeDuration\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"relativePeriod\":{\"expr\":{\"Literal\":{\"Value\":\"'Years'\"}}}}}],\"slider\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Date\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Date\"}},\"Right\":{\"DateSpan\":{\"Expression\":{\"Now\":{}},\"TimeUnit\":3}}}}}]}}}}],\"dateRange\":[{\"properties\":{\"includeToday\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Reporting Period'\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 82.95,
+          "width": 240.66,
+          "x": 1039.74,
+          "y": 98.13,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"5f6c50c840653c03beb4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1138.6417957274464,\"y\":3.504748866261658,\"z\":11000,\"width\":141.35820427255356,\"height\":64.25372921479708,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"REVENUEFACT_TABLE.Data Through\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"REVENUEFACT_TABLE\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Data Through\"},\"Name\":\"REVENUEFACT_TABLE.Data Through\",\"NativeReferenceName\":\"Data Through\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Data Through\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Data Through'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 64.25,
+          "width": 141.36,
+          "x": 1138.64,
+          "y": 3.50,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"7231f6bbb13c566ec0b7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":83.07818704641927,\"y\":8.412980966726003,\"z\":2000,\"width\":1196.7465425167738,\"height\":56.78762152540052,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Executive Dashboard\",\"textStyle\":{\"fontFamily\":\"Arial\",\"fontSize\":\"28pt\",\"color\":\"#ffffff\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 56.79,
+          "width": 1196.75,
+          "x": 83.08,
+          "y": 8.41,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"7e90f5ba5212acac61ac\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.516226208407504,\"y\":180.87909078460908,\"z\":11004,\"width\":187.18882650965355,\"height\":146.1755442968643,\"tabOrder\":11004}}],\"singleVisual\":{\"visualType\":\"gauge\",\"projections\":{\"TargetValue\":[{\"queryRef\":\"REVENUEFACT_TABLE.2023 Total Revenue\"}],\"Y\":[{\"queryRef\":\"REVENUEFACT_TABLE.2024 Total Revenue\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"REVENUEFACT_TABLE\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2023 Total Revenue\"},\"Name\":\"REVENUEFACT_TABLE.2023 Total Revenue\",\"NativeReferenceName\":\"2023 Total Revenue\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2024 Total Revenue\"},\"Name\":\"REVENUEFACT_TABLE.2024 Total Revenue\",\"NativeReferenceName\":\"2024 Total Revenue\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2024 Total Revenue\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#B3CCD1'\"}}}}},\"target\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0}}}}}}}],\"target\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'State Revenue 2024 v 2023'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 146.18,
+          "width": 187.19,
+          "x": 10.52,
+          "y": 180.88,
+          "z": 11004.00
+        },
+        {
+          "config": "{\"name\":\"7fbffa845e306e0d2169\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":619.405723675202,\"z\":11001,\"width\":230.30535396412432,\"height\":100.95577160071204,\"tabOrder\":11001}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"REVENUEFACT_TABLE.2024 Total Revenue\"},{\"queryRef\":\"REVENUEFACT_TABLE.2023 Total Revenue1\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"REVENUEFACT_TABLE\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2024 Total Revenue\"},\"Name\":\"REVENUEFACT_TABLE.2024 Total Revenue\",\"NativeReferenceName\":\"2024 Total Revenue\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2023 Total Revenue\"},\"Name\":\"REVENUEFACT_TABLE.2023 Total Revenue1\",\"NativeReferenceName\":\"2023 Total Revenue\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2024 Total Revenue\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}}}],\"card\":[{\"properties\":{\"barColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#B3CCD1'\"}}}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 100.96,
+          "width": 230.31,
+          "x": 0.00,
+          "y": 619.41,
+          "z": 11001.00
+        },
+        {
+          "config": "{\"name\":\"9911cca66e864d2c2103\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.64049646413624,\"y\":118.22773849040266,\"z\":8000,\"width\":614.7842401500939,\"height\":42.56198585654496,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"pageNavigator\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}}},\"selector\":{\"id\":\"default\"}}],\"layout\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}}}}],\"text\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}},\"selector\":{\"id\":\"press\"}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}},\"selector\":{\"id\":\"default\"}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#6A99A2'\"}}}}}},\"selector\":{\"id\":\"press\"}},{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}},\"selector\":{\"id\":\"selected\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 42.56,
+          "width": 614.78,
+          "x": 10.64,
+          "y": 118.23,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"a5b203cbabd7ed09d903\",\"layouts\":[{\"id\":0,\"position\":{\"x\":539.4824044913049,\"y\":180.87909078460908,\"z\":11006,\"width\":326.0030124606326,\"height\":251.33780638093933,\"tabOrder\":11006}}],\"singleVisual\":{\"visualType\":\"funnel\",\"projections\":{\"Category\":[{\"queryRef\":\"HOSPDIM_TABLE.Hospital Name\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(PATIENTFACT_TABLE.Total Patients)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"HOSPDIM_TABLE\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"PATIENTFACT_TABLE\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Hospital Name\"},\"Name\":\"HOSPDIM_TABLE.Hospital Name\",\"NativeReferenceName\":\"Hospital Name\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Total Patients\"}},\"Function\":0},\"Name\":\"Sum(PATIENTFACT_TABLE.Total Patients)\",\"NativeReferenceName\":\"Sum of Total Patients\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Total Patients\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Top 5 Hospitals by Pat. Volume'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"HOSPDIM_TABLE\"}},\"Property\":\"Hospital Name\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"HOSPDIM_TABLE\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"PATIENTFACT_TABLE\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Hospital Name\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Total Patients\"}},\"Function\":0}}}],\"Top\":5}}},\"Type\":2},{\"Name\":\"h\",\"Entity\":\"HOSPDIM_TABLE\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Hospital Name\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 251.34,
+          "width": 326.00,
+          "x": 539.48,
+          "y": 180.88,
+          "z": 11006.00
+        },
+        {
+          "config": "{\"name\":\"a6a1ad37d01049cc1e73\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":503.7272353827194,\"z\":11002,\"width\":230.30535396412432,\"height\":105.16226208407504,\"tabOrder\":11002}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"REVENUEFACT_TABLE.2024 Total Revenue\"},{\"queryRef\":\"REVENUEFACT_TABLE.2023 Total Revenue1\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"REVENUEFACT_TABLE\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2024 Total Revenue\"},\"Name\":\"REVENUEFACT_TABLE.2024 Total Revenue\",\"NativeReferenceName\":\"2024 Total Revenue\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2023 Total Revenue\"},\"Name\":\"REVENUEFACT_TABLE.2023 Total Revenue1\",\"NativeReferenceName\":\"2023 Total Revenue\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2024 Total Revenue\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}}}],\"card\":[{\"properties\":{\"barColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#B3CCD1'\"}}}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 105.16,
+          "width": 230.31,
+          "x": 0.00,
+          "y": 503.73,
+          "z": 11002.00
+        },
+        {
+          "config": "{\"name\":\"acbff595035d32d0011a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.516226208407504,\"y\":327.05463508147335,\"z\":11005,\"width\":187.18882650965355,\"height\":146.1755442968643,\"tabOrder\":11005}}],\"singleVisual\":{\"visualType\":\"gauge\",\"projections\":{\"Y\":[{\"queryRef\":\"PATIENTFACT_TABLE.2024 Total Pat. Volume\"}],\"TargetValue\":[{\"queryRef\":\"PATIENTFACT_TABLE.2023 Total Pat. Volume\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PATIENTFACT_TABLE\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"2024 Total Pat. Volume\"},\"Name\":\"PATIENTFACT_TABLE.2024 Total Pat. Volume\",\"NativeReferenceName\":\"2024 Total Pat. Volume\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"2023 Total Pat. Volume\"},\"Name\":\"PATIENTFACT_TABLE.2023 Total Pat. Volume\",\"NativeReferenceName\":\"2023 Total Pat. Volume\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"2024 Total Pat. Volume\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#B3CCD1'\"}}}}},\"target\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0}}}}}}}],\"target\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'State Pat. Volume 2024 v 2023'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 146.18,
+          "width": 187.19,
+          "x": 10.52,
+          "y": 327.05,
+          "z": 11005.00
+        },
+        {
+          "config": "{\"name\":\"d5faff746350868c3600\",\"layouts\":[{\"id\":0,\"position\":{\"x\":197.70505271806107,\"y\":180.87909078460908,\"z\":9000,\"width\":345.98384225660686,\"height\":251.33780638093933,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"funnel\",\"projections\":{\"Category\":[{\"queryRef\":\"HOSPDIM_TABLE.Hospital Name\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(REVENUEFACT_TABLE.Total Revenue)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"HOSPDIM_TABLE\",\"Type\":0},{\"Name\":\"r\",\"Entity\":\"REVENUEFACT_TABLE\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Hospital Name\"},\"Name\":\"HOSPDIM_TABLE.Hospital Name\",\"NativeReferenceName\":\"Hospital Name\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Total Revenue\"}},\"Function\":0},\"Name\":\"Sum(REVENUEFACT_TABLE.Total Revenue)\",\"NativeReferenceName\":\"Sum of Total Revenue\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Total Revenue\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Top 5 Hospitals by Revenue'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"HOSPDIM_TABLE\"}},\"Property\":\"Hospital Name\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"HOSPDIM_TABLE\",\"Type\":0},{\"Name\":\"r\",\"Entity\":\"REVENUEFACT_TABLE\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Hospital Name\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Total Revenue\"}},\"Function\":0}}}],\"Top\":5}}},\"Type\":2},{\"Name\":\"h\",\"Entity\":\"HOSPDIM_TABLE\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Hospital Name\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 251.34,
+          "width": 345.98,
+          "x": 197.71,
+          "y": 180.88,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"ecafc90b0e7137b0e620\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":469.02368889497467,\"z\":6000,\"width\":230.30535396412432,\"height\":53.632753662878265,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(REVENUEFACT_TABLE.Total Revenue)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"REVENUEFACT_TABLE\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Total Revenue\"}},\"Function\":0},\"Name\":\"Sum(REVENUEFACT_TABLE.Total Revenue)\",\"NativeReferenceName\":\"Total Revenue Over Period\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Total Revenue\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(REVENUEFACT_TABLE.Total Revenue)\":{\"displayName\":\"Total Revenue Over Period\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}}}],\"card\":[{\"properties\":{\"barColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 53.63,
+          "width": 230.31,
+          "x": 0.00,
+          "y": 469.02,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"fba5cfe8901eae1c81a5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":865.4854169519375,\"y\":180.87909078460908,\"z\":7000,\"width\":413.2876899904149,\"height\":251.33780638093933,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"HOSPDIM_TABLE.Hospital Name\",\"active\":true}],\"Y\":[{\"queryRef\":\"REVENUEFACT_TABLE.2023 Revenue Over Period\"},{\"queryRef\":\"REVENUEFACT_TABLE.2024 Total Revenue\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"HOSPDIM_TABLE\",\"Type\":0},{\"Name\":\"r\",\"Entity\":\"REVENUEFACT_TABLE\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Hospital Name\"},\"Name\":\"HOSPDIM_TABLE.Hospital Name\",\"NativeReferenceName\":\"Hospital Name\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2023 Revenue Over Period\"},\"Name\":\"REVENUEFACT_TABLE.2023 Revenue Over Period\",\"NativeReferenceName\":\"2023 Revenue Over Period\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2024 Total Revenue\"},\"Name\":\"REVENUEFACT_TABLE.2024 Total Revenue\",\"NativeReferenceName\":\"2024 Total Revenue\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2023 Revenue Over Period\"}}}]},\"columnProperties\":{\"HOSPDIM_TABLE.STATE\":{\"displayName\":\"State\"},\"HOSPDIM_TABLE.HOSPITAL_NAME\":{\"displayName\":\"Hospital Name\"},\"DEPTDIM_TABLE.DEPARTMENT_NAME\":{\"displayName\":\"Department Name\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#B3CCD1'\"}}}}}},\"selector\":{\"metadata\":\"REVENUEFACT_TABLE.2023 Revenue Over Period\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}},\"selector\":{\"metadata\":\"REVENUEFACT_TABLE.2024 Total Revenue\"}}],\"legend\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'TopCenter'\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'2023 v. 2024 Revenue'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 251.34,
+          "width": 413.29,
+          "x": 865.49,
+          "y": 180.88,
+          "z": 7000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"relationships\":[{\"source\":\"350b9afa6e9a10ba17d3\",\"target\":\"567fa80b482940e5caa7\",\"type\":1}],\"objects\":{\"outspacePane\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"187L\"}}}}}]}}",
+      "displayName": "Hospital Dashboard",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "bd930cb43c05c7a0947d",
+      "ordinal": 3,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"01d19454d320d63c3b36\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":585.7537998082979,\"z\":13000,\"width\":230.30535396412432,\"height\":59.94248938792277,\"tabOrder\":13000}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(PATIENTFACT_TABLE.Total Patients)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PATIENTFACT_TABLE\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Total Patients\"}},\"Function\":0},\"Name\":\"Sum(PATIENTFACT_TABLE.Total Patients)\",\"NativeReferenceName\":\"Total Patients Seen Over Period\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Total Patients\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(PATIENTFACT_TABLE.Total Patients)\":{\"displayName\":\"Total Patients Seen Over Period\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}}}],\"card\":[{\"properties\":{\"barColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 59.94,
+          "width": 230.31,
+          "x": 0.00,
+          "y": 585.75,
+          "z": 13000.00
+        },
+        {
+          "config": "{\"name\":\"1f413f50bb324dd3626c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":216.63425989319458,\"y\":432.2168971655484,\"z\":3000,\"width\":1064.2420922908393,\"height\":287.09297548952486,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"ribbonChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Date.Date.Variation.Date Hierarchy.Year\",\"active\":true},{\"queryRef\":\"Date.Date.Variation.Date Hierarchy.Quarter\",\"active\":true},{\"queryRef\":\"Date.Date.Variation.Date Hierarchy.Month\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(REVENUEFACT_TABLE.Total Revenue)\"}],\"Tooltips\":[{\"queryRef\":\"Sum(PATIENTFACT_TABLE.Total Patients)\"}],\"Series\":[{\"queryRef\":\"DEPTDIM_TABLE.Department Name\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Date\",\"Type\":0},{\"Name\":\"r\",\"Entity\":\"REVENUEFACT_TABLE\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"PATIENTFACT_TABLE\",\"Type\":0},{\"Name\":\"d1\",\"Entity\":\"DEPTDIM_TABLE\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"Date.Date.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"Date Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Quarter\"},\"Name\":\"Date.Date.Variation.Date Hierarchy.Quarter\",\"NativeReferenceName\":\"Date Quarter\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"Date.Date.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"Date Month\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Total Revenue\"}},\"Function\":0},\"Name\":\"Sum(REVENUEFACT_TABLE.Total Revenue)\",\"NativeReferenceName\":\"Sum of Total Revenue\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Total Patients\"}},\"Function\":0},\"Name\":\"Sum(PATIENTFACT_TABLE.Total Patients)\",\"NativeReferenceName\":\"Sum of Total Patients\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d1\"}},\"Property\":\"Department Name\"},\"Name\":\"DEPTDIM_TABLE.Department Name\",\"NativeReferenceName\":\"Department Name\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"legend\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'BottomCenter'\"}}},\"showTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Revenue Trend Line By Department'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Date\"}},\"Property\":\"Date\"}},\"type\":\"Categorical\",\"howCreated\":1,\"isHiddenInViewMode\":false},{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Date\"}},\"Property\":\"Date\"}},\"type\":\"Categorical\",\"howCreated\":1,\"isHiddenInViewMode\":false}]",
+          "height": 287.09,
+          "width": 1064.24,
+          "x": 216.63,
+          "y": 432.22,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"2778b82a9cd596440e19\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.516226208407504,\"y\":0,\"z\":16001,\"width\":72.56196083801177,\"height\":72.56196083801177,\"tabOrder\":16001}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"ACME_Hospitals_(1)9941869980320883.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 72.56,
+          "width": 72.56,
+          "x": 10.52,
+          "y": 0.00,
+          "z": 16001.00
+        },
+        {
+          "config": "{\"name\":\"350b9afa6e9a10ba17d3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":700.9497732523316,\"y\":103.97421636576253,\"z\":4000,\"width\":239.49117252788,\"height\":77.10447505775649,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"HOSPDIM_TABLE.Hospital Name\",\"active\":true},{\"queryRef\":\"HOSPDIM_TABLE.STATE\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"HOSPDIM_TABLE\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"State\"},\"Name\":\"HOSPDIM_TABLE.STATE\",\"NativeReferenceName\":\"State\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Hospital Name\"},\"Name\":\"HOSPDIM_TABLE.Hospital Name\",\"NativeReferenceName\":\"Hospital Name\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"selfFilter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"HOSPDIM_TABLE\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Or\":{\"Left\":{\"Contains\":{\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Hospital Name\"}},\"Right\":{\"Literal\":{\"Value\":\"'CA'\"}}}},\"Right\":{\"Contains\":{\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"State\"}},\"Right\":{\"Literal\":{\"Value\":\"'CA'\"}}}}}},\"Annotations\":{\"PowerBI.MParameterBehavior\":1}}]}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"HOSPDIM_TABLE\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Hospital Name\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Hospital_99'\"}}]]}}}]}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"cachedFilterDisplayItems\":[{\"id\":{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"HOSPDIM_TABLE\"}},\"Property\":\"Hospital Name\"}},\"Right\":{\"Literal\":{\"Value\":\"'Hospital_99'\"}}}}},\"displayName\":\"Hospital_99\"}]}}",
+          "filters": "[]",
+          "height": 77.10,
+          "width": 239.49,
+          "x": 700.95,
+          "y": 103.97,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"3f5cb0e030a096b43200\",\"layouts\":[{\"id\":0,\"position\":{\"x\":83.07818704641927,\"y\":8.412980966726003,\"z\":2000,\"width\":1196.7465425167738,\"height\":56.78762152540052,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Executive Dashboard\",\"textStyle\":{\"fontFamily\":\"Arial\",\"fontSize\":\"28pt\",\"color\":\"#ffffff\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 56.79,
+          "width": 1196.75,
+          "x": 83.08,
+          "y": 8.41,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"45f0d414c41b1d804914\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":619.405723675202,\"z\":11000,\"width\":230.30535396412432,\"height\":100.95577160071204,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"REVENUEFACT_TABLE.2024 Total Revenue\"},{\"queryRef\":\"REVENUEFACT_TABLE.2023 Total Revenue1\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"REVENUEFACT_TABLE\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2024 Total Revenue\"},\"Name\":\"REVENUEFACT_TABLE.2024 Total Revenue\",\"NativeReferenceName\":\"2024 Total Revenue\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2023 Total Revenue\"},\"Name\":\"REVENUEFACT_TABLE.2023 Total Revenue1\",\"NativeReferenceName\":\"2023 Total Revenue\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2024 Total Revenue\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}}}],\"card\":[{\"properties\":{\"barColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#B3CCD1'\"}}}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 100.96,
+          "width": 230.31,
+          "x": 0.00,
+          "y": 619.41,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"4f476792421694087ee4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.516226208407504,\"y\":180.87909078460908,\"z\":14000,\"width\":187.18882650965355,\"height\":146.1755442968643,\"tabOrder\":14000}}],\"singleVisual\":{\"visualType\":\"gauge\",\"projections\":{\"TargetValue\":[{\"queryRef\":\"REVENUEFACT_TABLE.2023 Total Revenue\"}],\"Y\":[{\"queryRef\":\"REVENUEFACT_TABLE.2024 Total Revenue\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"REVENUEFACT_TABLE\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2023 Total Revenue\"},\"Name\":\"REVENUEFACT_TABLE.2023 Total Revenue\",\"NativeReferenceName\":\"2023 Total Revenue\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2024 Total Revenue\"},\"Name\":\"REVENUEFACT_TABLE.2024 Total Revenue\",\"NativeReferenceName\":\"2024 Total Revenue\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2024 Total Revenue\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#B3CCD1'\"}}}}},\"target\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0}}}}}}}],\"target\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Hospital Revenue 2024 v 2023'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 146.18,
+          "width": 187.19,
+          "x": 10.52,
+          "y": 180.88,
+          "z": 14000.00
+        },
+        {
+          "config": "{\"name\":\"567fa80b482940e5caa7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":197.70505271806107,\"y\":180.87909078460908,\"z\":9000,\"width\":345.98384225660686,\"height\":251.33780638093933,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"funnel\",\"projections\":{\"Category\":[{\"queryRef\":\"DEPTDIM_TABLE.Department Name\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(REVENUEFACT_TABLE.Total Revenue)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"REVENUEFACT_TABLE\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"DEPTDIM_TABLE\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Total Revenue\"}},\"Function\":0},\"Name\":\"Sum(REVENUEFACT_TABLE.Total Revenue)\",\"NativeReferenceName\":\"Sum of Total Revenue\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Department Name\"},\"Name\":\"DEPTDIM_TABLE.Department Name\",\"NativeReferenceName\":\"Department Name\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Total Revenue\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Top 5 Departments by Revenue'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"DEPTDIM_TABLE\"}},\"Property\":\"Department Name\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DEPTDIM_TABLE\",\"Type\":0},{\"Name\":\"r\",\"Entity\":\"REVENUEFACT_TABLE\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Department Name\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Total Revenue\"}},\"Function\":0}}}],\"Top\":5}}},\"Type\":2},{\"Name\":\"d\",\"Entity\":\"DEPTDIM_TABLE\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Department Name\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 251.34,
+          "width": 345.98,
+          "x": 197.71,
+          "y": 180.88,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"8375bda0d98a141a0963\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.64049646413624,\"y\":118.22773849040266,\"z\":8000,\"width\":614.7842401500939,\"height\":42.56198585654496,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"pageNavigator\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}}},\"selector\":{\"id\":\"default\"}}],\"layout\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}}}}],\"text\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}},\"selector\":{\"id\":\"press\"}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}},\"selector\":{\"id\":\"default\"}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#6A99A2'\"}}}}}},\"selector\":{\"id\":\"press\"}},{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}},\"selector\":{\"id\":\"selected\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 42.56,
+          "width": 614.78,
+          "x": 10.64,
+          "y": 118.23,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"86a4dd9f46ee1ca7b87d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1039.7421636576253,\"y\":98.13296825532643,\"z\":5000,\"width\":240.6594221499672,\"height\":82.94572316819259,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Date.Date\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Date\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Date\"},\"Name\":\"Date.Date\",\"NativeReferenceName\":\"Reporting Period\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Date\"}}}]},\"columnProperties\":{\"Date.Date\":{\"displayName\":\"Reporting Period\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Relative'\"}}},\"relativeRange\":{\"expr\":{\"Literal\":{\"Value\":\"'This'\"}}},\"relativeDuration\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"relativePeriod\":{\"expr\":{\"Literal\":{\"Value\":\"'Years'\"}}}}}],\"slider\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Date\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Date\"}},\"Right\":{\"DateSpan\":{\"Expression\":{\"Now\":{}},\"TimeUnit\":3}}}}}]}}}}],\"dateRange\":[{\"properties\":{\"includeToday\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Reporting Period'\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 82.95,
+          "width": 240.66,
+          "x": 1039.74,
+          "y": 98.13,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"90448e93017c70a06d4b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1279.5989795461667,\"height\":72.10729684166556,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 72.11,
+          "width": 1279.60,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"ad19170fdb96440532eb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.516226208407504,\"y\":327.05463508147335,\"z\":15000,\"width\":187.18882650965355,\"height\":146.1755442968643,\"tabOrder\":15000}}],\"singleVisual\":{\"visualType\":\"gauge\",\"projections\":{\"Y\":[{\"queryRef\":\"PATIENTFACT_TABLE.2024 Total Pat. Volume\"}],\"TargetValue\":[{\"queryRef\":\"PATIENTFACT_TABLE.2023 Total Pat. Volume\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PATIENTFACT_TABLE\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"2024 Total Pat. Volume\"},\"Name\":\"PATIENTFACT_TABLE.2024 Total Pat. Volume\",\"NativeReferenceName\":\"2024 Total Pat. Volume\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"2023 Total Pat. Volume\"},\"Name\":\"PATIENTFACT_TABLE.2023 Total Pat. Volume\",\"NativeReferenceName\":\"2023 Total Pat. Volume\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"2024 Total Pat. Volume\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#B3CCD1'\"}}}}},\"target\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0}}}}}}}],\"target\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Hospital Pat. Volume 2024 v 2023'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 146.18,
+          "width": 187.19,
+          "x": 10.52,
+          "y": 327.05,
+          "z": 15000.00
+        },
+        {
+          "config": "{\"name\":\"d7b5a66a209800155a06\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":503.7272353827194,\"z\":12000,\"width\":230.30535396412432,\"height\":105.16226208407504,\"tabOrder\":12000}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"REVENUEFACT_TABLE.2024 Total Revenue\"},{\"queryRef\":\"REVENUEFACT_TABLE.2023 Total Revenue1\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"REVENUEFACT_TABLE\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2024 Total Revenue\"},\"Name\":\"REVENUEFACT_TABLE.2024 Total Revenue\",\"NativeReferenceName\":\"2024 Total Revenue\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2023 Total Revenue\"},\"Name\":\"REVENUEFACT_TABLE.2023 Total Revenue1\",\"NativeReferenceName\":\"2023 Total Revenue\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2024 Total Revenue\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}}}],\"card\":[{\"properties\":{\"barColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#B3CCD1'\"}}}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 105.16,
+          "width": 230.31,
+          "x": 0.00,
+          "y": 503.73,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"de6775c86179270e631a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":469.02368889497467,\"z\":6000,\"width\":230.30535396412432,\"height\":53.632753662878265,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(REVENUEFACT_TABLE.Total Revenue)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"REVENUEFACT_TABLE\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Total Revenue\"}},\"Function\":0},\"Name\":\"Sum(REVENUEFACT_TABLE.Total Revenue)\",\"NativeReferenceName\":\"Total Revenue Over Period\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Total Revenue\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(REVENUEFACT_TABLE.Total Revenue)\":{\"displayName\":\"Total Revenue Over Period\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}}}],\"card\":[{\"properties\":{\"barColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 53.63,
+          "width": 230.31,
+          "x": 0.00,
+          "y": 469.02,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"de9ce0bad09162c992e2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1138.6417957274464,\"y\":3.504748866261658,\"z\":10000,\"width\":141.35820427255356,\"height\":64.25372921479708,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"REVENUEFACT_TABLE.Data Through\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"REVENUEFACT_TABLE\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Data Through\"},\"Name\":\"REVENUEFACT_TABLE.Data Through\",\"NativeReferenceName\":\"Data Through\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Data Through\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Data Through'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 64.25,
+          "width": 141.36,
+          "x": 1138.64,
+          "y": 3.50,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"ed0c4e3b55ce538b0a91\",\"layouts\":[{\"id\":0,\"position\":{\"x\":865.4854169519375,\"y\":180.87909078460908,\"z\":7000,\"width\":413.2876899904149,\"height\":251.33780638093933,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"DEPTDIM_TABLE.Department Name\",\"active\":true}],\"Y\":[{\"queryRef\":\"REVENUEFACT_TABLE.2023 Revenue Over Period\"},{\"queryRef\":\"REVENUEFACT_TABLE.2024 Total Revenue\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"REVENUEFACT_TABLE\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"DEPTDIM_TABLE\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2023 Revenue Over Period\"},\"Name\":\"REVENUEFACT_TABLE.2023 Revenue Over Period\",\"NativeReferenceName\":\"2023 Revenue Over Period\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2024 Total Revenue\"},\"Name\":\"REVENUEFACT_TABLE.2024 Total Revenue\",\"NativeReferenceName\":\"2024 Total Revenue\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Department Name\"},\"Name\":\"DEPTDIM_TABLE.Department Name\",\"NativeReferenceName\":\"Department Name\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2023 Revenue Over Period\"}}}]},\"columnProperties\":{\"HOSPDIM_TABLE.STATE\":{\"displayName\":\"State\"},\"HOSPDIM_TABLE.HOSPITAL_NAME\":{\"displayName\":\"Hospital Name\"},\"DEPTDIM_TABLE.DEPARTMENT_NAME\":{\"displayName\":\"Department Name\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#B3CCD1'\"}}}}}},\"selector\":{\"metadata\":\"REVENUEFACT_TABLE.2023 Revenue Over Period\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}},\"selector\":{\"metadata\":\"REVENUEFACT_TABLE.2024 Total Revenue\"}}],\"legend\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'TopCenter'\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'2023 v. 2024 Revenue'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 251.34,
+          "width": 413.29,
+          "x": 865.49,
+          "y": 180.88,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"fedaead4c30c9cd3ce52\",\"layouts\":[{\"id\":0,\"position\":{\"x\":539.4824044913049,\"y\":180.87909078460908,\"z\":16000,\"width\":326.0030124606326,\"height\":251.33780638093933,\"tabOrder\":16000}}],\"singleVisual\":{\"visualType\":\"funnel\",\"projections\":{\"Category\":[{\"queryRef\":\"DEPTDIM_TABLE.Department Name\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(PATIENTFACT_TABLE.Total Patients)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DEPTDIM_TABLE\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"PATIENTFACT_TABLE\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Department Name\"},\"Name\":\"DEPTDIM_TABLE.Department Name\",\"NativeReferenceName\":\"Department Name\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Total Patients\"}},\"Function\":0},\"Name\":\"Sum(PATIENTFACT_TABLE.Total Patients)\",\"NativeReferenceName\":\"Sum of Total Patients\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Total Patients\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Top 5 Departments by Pat. Volume'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"DEPTDIM_TABLE\"}},\"Property\":\"Department Name\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DEPTDIM_TABLE\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"PATIENTFACT_TABLE\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Department Name\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Total Patients\"}},\"Function\":0}}}],\"Top\":5}}},\"Type\":2},{\"Name\":\"d\",\"Entity\":\"DEPTDIM_TABLE\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Department Name\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 251.34,
+          "width": 326.00,
+          "x": 539.48,
+          "y": 180.88,
+          "z": 16000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"objects\":{\"outspacePane\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"187L\"}}}}}]}}",
+      "displayName": "YOY Scorecard",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "c215954571931b73008b",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"085cab4c86483391c04e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1279.5989795461667,\"height\":72.10729684166556,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 72.11,
+          "width": 1279.60,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"7626b0c3e788d39e549e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.64049646413624,\"y\":118.22773849040266,\"z\":3000,\"width\":614.7842401500939,\"height\":42.56198585654496,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"pageNavigator\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}}},\"selector\":{\"id\":\"default\"}}],\"layout\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}}}}],\"text\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}},\"selector\":{\"id\":\"press\"}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}},\"selector\":{\"id\":\"default\"}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#6A99A2'\"}}}}}},\"selector\":{\"id\":\"press\"}},{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}},\"selector\":{\"id\":\"selected\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 42.56,
+          "width": 614.78,
+          "x": 10.64,
+          "y": 118.23,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"7b0fe02f98b74e02dc01\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.514246598784975,\"y\":200.93893499900173,\"z\":4000,\"width\":781.5589971763499,\"height\":518.7028322067255,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Values\":[{\"queryRef\":\"REVENUEFACT_TABLE.2024 Total Revenue\"},{\"queryRef\":\"REVENUEFACT_TABLE.2023 Total Revenue\"},{\"queryRef\":\"REVENUEFACT_TABLE.Revenue YoY Variance\"},{\"queryRef\":\"REVENUEFACT_TABLE.Revenue YoY Growth %\"}],\"Rows\":[{\"queryRef\":\"HOSPDIM_TABLE.State\",\"active\":true},{\"queryRef\":\"HOSPDIM_TABLE.Hospital Name\"},{\"queryRef\":\"DEPTDIM_TABLE.Department Name\"},{\"queryRef\":\"DEPTDIM_TABLE.Dept ID\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"REVENUEFACT_TABLE\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"HOSPDIM_TABLE\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"DEPTDIM_TABLE\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2024 Total Revenue\"},\"Name\":\"REVENUEFACT_TABLE.2024 Total Revenue\",\"NativeReferenceName\":\"2024 Total Revenue\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2023 Revenue Over Period\"},\"Name\":\"REVENUEFACT_TABLE.2023 Total Revenue\",\"NativeReferenceName\":\"2023 Total Revenue\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Revenue YoY Variance\"},\"Name\":\"REVENUEFACT_TABLE.Revenue YoY Variance\",\"NativeReferenceName\":\"Revenue YoY Variance\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Revenue YoY Growth %\"},\"Name\":\"REVENUEFACT_TABLE.Revenue YoY Growth %\",\"NativeReferenceName\":\"Revenue YoY Growth %\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"State\"},\"Name\":\"HOSPDIM_TABLE.State\",\"NativeReferenceName\":\"State\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Hospital Name\"},\"Name\":\"HOSPDIM_TABLE.Hospital Name\",\"NativeReferenceName\":\"Hospital Name\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Department Name\"},\"Name\":\"DEPTDIM_TABLE.Department Name\",\"NativeReferenceName\":\"Department Name\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Dept ID\"},\"Name\":\"DEPTDIM_TABLE.Dept ID\",\"NativeReferenceName\":\"Dept ID\"}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"HOSPDIM_TABLE.State\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"HOSPDIM_TABLE\"}},\"Property\":\"State\"}}],\"isPinned\":true},{\"queryRefs\":[\"HOSPDIM_TABLE.Hospital Name\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"HOSPDIM_TABLE\"}},\"Property\":\"Hospital Name\"}}],\"isPinned\":true},{\"queryRefs\":[\"DEPTDIM_TABLE.Department Name\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"DEPTDIM_TABLE\"}},\"Property\":\"Department Name\"}}],\"isPinned\":true},{\"queryRefs\":[\"DEPTDIM_TABLE.Dept ID\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'CA'\"}}],\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'Hospital_100'\"}}],\"isToggled\":true}]}]}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"values\":[{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"REVENUEFACT_TABLE\"}},\"Property\":\"Revenue YoY Growth %\"}},\"FillRule\":{\"linearGradient3\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#efb5b9'\"}}},\"mid\":{\"color\":{\"Literal\":{\"Value\":\"'#f0e199'\"}},\"value\":{\"Literal\":{\"Value\":\"0D\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#C6F7CE'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"REVENUEFACT_TABLE.Revenue YoY Growth %\"}},{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"REVENUEFACT_TABLE\"}},\"Property\":\"Revenue YoY Growth %\"}},\"FillRule\":{\"linearGradient3\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#efb5b9'\"}}},\"mid\":{\"color\":{\"Literal\":{\"Value\":\"'#f0e199'\"}},\"value\":{\"Literal\":{\"Value\":\"0D\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#C6F7CE'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"REVENUEFACT_TABLE.Revenue YoY Variance\"}},{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"REVENUEFACT_TABLE\"}},\"Property\":\"Revenue YoY Growth %\"}},\"FillRule\":{\"linearGradient3\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#efb5b9'\"}}},\"mid\":{\"color\":{\"Literal\":{\"Value\":\"'#f0e199'\"}},\"value\":{\"Literal\":{\"Value\":\"0D\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#C6F7CE'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"REVENUEFACT_TABLE.2023 Total Revenue\"}},{\"properties\":{\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"FillRule\":{\"Input\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"REVENUEFACT_TABLE\"}},\"Property\":\"Revenue YoY Growth %\"}},\"FillRule\":{\"linearGradient3\":{\"min\":{\"color\":{\"Literal\":{\"Value\":\"'#efb5b9'\"}}},\"mid\":{\"color\":{\"Literal\":{\"Value\":\"'#f0e199'\"}},\"value\":{\"Literal\":{\"Value\":\"0D\"}}},\"max\":{\"color\":{\"Literal\":{\"Value\":\"'#C6F7CE'\"}}},\"nullColoringStrategy\":{\"strategy\":{\"Literal\":{\"Value\":\"'asZero'\"}}}}}}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"REVENUEFACT_TABLE.2024 Total Revenue\"}}],\"subTotals\":[{\"properties\":{\"applyToHeaders\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"id\":\"Column\"}}],\"blankRows\":[{\"properties\":{\"showBlankRows\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"grid\":[{\"properties\":{\"outlineColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#6A99A2'\"}}}}}}}],\"columnHeaders\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}},\"backColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"foreground\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Revenue Matrix'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 518.70,
+          "width": 781.56,
+          "x": 10.51,
+          "y": 200.94,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"915603d3aeab283c684e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":83.07818704641927,\"y\":8.412980966726003,\"z\":2000,\"width\":1196.7465425167738,\"height\":56.78762152540052,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Executive Dashboard\",\"textStyle\":{\"fontFamily\":\"Arial\",\"fontSize\":\"28pt\",\"color\":\"#ffffff\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 56.79,
+          "width": 1196.75,
+          "x": 83.08,
+          "y": 8.41,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"a63a98e3bc0a258005a0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":792.0732437751348,\"y\":200.93893499900173,\"z\":5000,\"width\":488.3283420324577,\"height\":518.7028322067255,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"HOSPDIM_TABLE.State\",\"active\":true}],\"Y\":[{\"queryRef\":\"REVENUEFACT_TABLE.2024 Total Revenue\"},{\"queryRef\":\"REVENUEFACT_TABLE.2023 Total Revenue\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"HOSPDIM_TABLE\",\"Type\":0},{\"Name\":\"r\",\"Entity\":\"REVENUEFACT_TABLE\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2024 Total Revenue\"},\"Name\":\"REVENUEFACT_TABLE.2024 Total Revenue\",\"NativeReferenceName\":\"2024 Total Revenue\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2023 Revenue Over Period\"},\"Name\":\"REVENUEFACT_TABLE.2023 Total Revenue\",\"NativeReferenceName\":\"2023 Total Revenue\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"State\"},\"Name\":\"HOSPDIM_TABLE.State\",\"NativeReferenceName\":\"State\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2024 Total Revenue\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"legend\":[{\"properties\":{\"showGradientLegend\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'BottomCenter'\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}},\"selector\":{\"metadata\":\"REVENUEFACT_TABLE.2023 Total Revenue\"}},{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#A8C6CC'\"}}}}}},\"selector\":{\"metadata\":\"REVENUEFACT_TABLE.2024 Total Revenue\"}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"foreground\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}}}],\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Year Over Year Revenue By State'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 518.70,
+          "width": 488.33,
+          "x": 792.07,
+          "y": 200.94,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"dfb962801b7720b46081\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1139.0433815350389,\"y\":3.504748866261658,\"z\":6000,\"width\":141.35820427255356,\"height\":64.25372921479708,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"REVENUEFACT_TABLE.Data Through\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"REVENUEFACT_TABLE\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Data Through\"},\"Name\":\"REVENUEFACT_TABLE.Data Through\",\"NativeReferenceName\":\"Data Through\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Data Through\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Data Through'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 64.25,
+          "width": 141.36,
+          "x": 1139.04,
+          "y": 3.50,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"f206765b02996802390c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.516226208407504,\"y\":0,\"z\":6001,\"width\":72.56196083801177,\"height\":72.56196083801177,\"tabOrder\":6001}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"ACME_Hospitals_(1)9941869980320883.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 72.56,
+          "width": 72.56,
+          "x": 10.52,
+          "y": 0.00,
+          "z": 6001.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"relationships\":[{\"source\":\"6200054602c185718ea8\",\"target\":\"458089ee2275c1500405\",\"type\":3},{\"source\":\"0820a9266b30adba9c7d\",\"target\":\"6f05a62aa7dcea51569b\",\"type\":3},{\"source\":\"0820a9266b30adba9c7d\",\"target\":\"2e88bba07a0b6b92b9e0\",\"type\":3},{\"source\":\"6200054602c185718ea8\",\"target\":\"a04907a8e7dd3c0d7783\",\"type\":3},{\"source\":\"6200054602c185718ea8\",\"target\":\"3dbe19eea3aec9b6903e\",\"type\":3},{\"source\":\"6200054602c185718ea8\",\"target\":\"6f05a62aa7dcea51569b\",\"type\":3},{\"source\":\"6200054602c185718ea8\",\"target\":\"d5fcf0d51a3eb69ce7a6\",\"type\":3},{\"source\":\"6200054602c185718ea8\",\"target\":\"ef8880d20d5e9ea25b88\",\"type\":3},{\"source\":\"6200054602c185718ea8\",\"target\":\"2e88bba07a0b6b92b9e0\",\"type\":3}],\"objects\":{\"outspacePane\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"187L\"}}}}}]}}",
+      "displayName": "Executive Dashboard",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "e819035f8bbb72d019b7",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0820a9266b30adba9c7d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1039.7421636576253,\"y\":98.13296825532643,\"z\":6000,\"width\":240.6594221499672,\"height\":82.94572316819259,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Date.Date\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Date\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Date\"},\"Name\":\"Date.Date\",\"NativeReferenceName\":\"Reporting Period\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Date\"}}}]},\"columnProperties\":{\"Date.Date\":{\"displayName\":\"Reporting Period\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Relative'\"}}},\"relativeRange\":{\"expr\":{\"Literal\":{\"Value\":\"'This'\"}}},\"relativeDuration\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"relativePeriod\":{\"expr\":{\"Literal\":{\"Value\":\"'Years'\"}}}}}],\"slider\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Date\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Date\"}},\"Right\":{\"DateSpan\":{\"Expression\":{\"Now\":{}},\"TimeUnit\":3}}}}}]}}}}],\"dateRange\":[{\"properties\":{\"includeToday\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Reporting Period'\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 82.95,
+          "width": 240.66,
+          "x": 1039.74,
+          "y": 98.13,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"0892d177ad99e96e5dc2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":83.07818704641927,\"y\":8.412980966726003,\"z\":3000,\"width\":1196.7465425167738,\"height\":56.78762152540052,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Executive Dashboard\",\"textStyle\":{\"fontFamily\":\"Arial\",\"fontSize\":\"28pt\",\"color\":\"#ffffff\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 56.79,
+          "width": 1196.75,
+          "x": 83.08,
+          "y": 8.41,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"22e603fa89c7dd446d8a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.64049646413624,\"y\":118.22773849040266,\"z\":9000,\"width\":614.7842401500939,\"height\":42.56198585654496,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"pageNavigator\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}}},\"selector\":{\"id\":\"default\"}}],\"layout\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}}}}],\"text\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}},\"selector\":{\"id\":\"press\"}}],\"outline\":[{\"properties\":{\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}},\"selector\":{\"id\":\"default\"}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#6A99A2'\"}}}}}},\"selector\":{\"id\":\"press\"}},{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}},\"selector\":{\"id\":\"selected\"}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 42.56,
+          "width": 614.78,
+          "x": 10.64,
+          "y": 118.23,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"2e88bba07a0b6b92b9e0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":619.405723675202,\"z\":12000,\"width\":230.30535396412432,\"height\":100.95577160071204,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"REVENUEFACT_TABLE.2024 Total Revenue\"},{\"queryRef\":\"REVENUEFACT_TABLE.2023 Total Revenue1\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"REVENUEFACT_TABLE\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2024 Total Revenue\"},\"Name\":\"REVENUEFACT_TABLE.2024 Total Revenue\",\"NativeReferenceName\":\"2024 Total Revenue\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2023 Total Revenue\"},\"Name\":\"REVENUEFACT_TABLE.2023 Total Revenue1\",\"NativeReferenceName\":\"2023 Total Revenue\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2024 Total Revenue\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}}}],\"card\":[{\"properties\":{\"barColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#B3CCD1'\"}}}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 100.96,
+          "width": 230.31,
+          "x": 0.00,
+          "y": 619.41,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"34f9f5df6188354445bb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":1000,\"width\":1279.5989795461667,\"height\":72.10729684166556,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 72.11,
+          "width": 1279.60,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"3dbe19eea3aec9b6903e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.516226208407504,\"y\":312.3319183897029,\"z\":0,\"width\":187.18882650965355,\"height\":146.1755442968643,\"tabOrder\":15000}}],\"singleVisual\":{\"visualType\":\"gauge\",\"projections\":{\"Y\":[{\"queryRef\":\"PATIENTFACT_TABLE.2024 Total Pat. Volume\"}],\"TargetValue\":[{\"queryRef\":\"PATIENTFACT_TABLE.2023 Total Pat. Volume\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PATIENTFACT_TABLE\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"2024 Total Pat. Volume\"},\"Name\":\"PATIENTFACT_TABLE.2024 Total Pat. Volume\",\"NativeReferenceName\":\"2024 Total Pat. Volume\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"2023 Total Pat. Volume\"},\"Name\":\"PATIENTFACT_TABLE.2023 Total Pat. Volume\",\"NativeReferenceName\":\"2023 Total Pat. Volume\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"2024 Total Pat. Volume\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#B3CCD1'\"}}}}},\"target\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0}}}}}}}],\"target\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Enterprise Pat. Volume 2024 v 2023'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 146.18,
+          "width": 187.19,
+          "x": 10.52,
+          "y": 312.33,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"458089ee2275c1500405\",\"layouts\":[{\"id\":0,\"position\":{\"x\":211.3761467889908,\"y\":170.36286457620156,\"z\":10000,\"width\":334.4159934273586,\"height\":331.2611255648364,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"funnel\",\"projections\":{\"Category\":[{\"queryRef\":\"HOSPDIM_TABLE.State\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(REVENUEFACT_TABLE.Total Revenue)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"HOSPDIM_TABLE\",\"Type\":0},{\"Name\":\"r\",\"Entity\":\"REVENUEFACT_TABLE\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Total Revenue\"}},\"Function\":0},\"Name\":\"Sum(REVENUEFACT_TABLE.Total Revenue)\",\"NativeReferenceName\":\"Sum of Total Revenue\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"State\"},\"Name\":\"HOSPDIM_TABLE.State\",\"NativeReferenceName\":\"State\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Total Revenue\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Top 5 Hospitals by Revenue'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"HOSPDIM_TABLE\"}},\"Property\":\"State\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"HOSPDIM_TABLE\",\"Type\":0},{\"Name\":\"r\",\"Entity\":\"REVENUEFACT_TABLE\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"State\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Total Revenue\"}},\"Function\":0}}}],\"Top\":5}}},\"Type\":2},{\"Name\":\"h\",\"Entity\":\"HOSPDIM_TABLE\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"State\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 331.26,
+          "width": 334.42,
+          "x": 211.38,
+          "y": 170.36,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"6200054602c185718ea8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":700.9497732523316,\"y\":103.97421636576253,\"z\":5000,\"width\":239.49117252788,\"height\":77.10447505775649,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"HOSPDIM_TABLE.STATE\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"HOSPDIM_TABLE\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"State\"},\"Name\":\"HOSPDIM_TABLE.STATE\",\"NativeReferenceName\":\"State\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"HOSPDIM_TABLE\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"State\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'CA'\"}}]]}}}]}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 77.10,
+          "width": 239.49,
+          "x": 700.95,
+          "y": 103.97,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"6e0f3aa2014956580eac\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1138.6417957274464,\"y\":3.504748866261658,\"z\":11000,\"width\":141.35820427255356,\"height\":64.25372921479708,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"REVENUEFACT_TABLE.Data Through\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"REVENUEFACT_TABLE\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Data Through\"},\"Name\":\"REVENUEFACT_TABLE.Data Through\",\"NativeReferenceName\":\"Data Through\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Data Through\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Data Through'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 64.25,
+          "width": 141.36,
+          "x": 1138.64,
+          "y": 3.50,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"6f05a62aa7dcea51569b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":501.6239901410379,\"z\":13000,\"width\":230.30535396412432,\"height\":100.95577160071204,\"tabOrder\":12000}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"REVENUEFACT_TABLE.2024 Total Revenue\"},{\"queryRef\":\"REVENUEFACT_TABLE.2023 Total Revenue1\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"REVENUEFACT_TABLE\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2024 Total Revenue\"},\"Name\":\"REVENUEFACT_TABLE.2024 Total Revenue\",\"NativeReferenceName\":\"2024 Total Revenue\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2023 Total Revenue\"},\"Name\":\"REVENUEFACT_TABLE.2023 Total Revenue1\",\"NativeReferenceName\":\"2023 Total Revenue\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2024 Total Revenue\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}}}],\"card\":[{\"properties\":{\"barColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#B3CCD1'\"}}}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 100.96,
+          "width": 230.31,
+          "x": 0.00,
+          "y": 501.62,
+          "z": 13000.00
+        },
+        {
+          "config": "{\"name\":\"77c8a3817536a30ce177\",\"layouts\":[{\"id\":0,\"position\":{\"x\":545.7921402163495,\"y\":180.87909078460908,\"z\":8000,\"width\":732.980966726003,\"height\":331.2611255648364,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"decompositionTreeVisual\",\"projections\":{\"ExplainBy\":[{\"queryRef\":\"HOSPDIM_TABLE.STATE\",\"active\":true},{\"queryRef\":\"HOSPDIM_TABLE.HOSPITAL_NAME\",\"active\":true},{\"queryRef\":\"DEPTDIM_TABLE.DEPARTMENT_NAME\",\"active\":true}],\"Analyze\":[{\"queryRef\":\"Sum(REVENUEFACT_TABLE.TOTAL_REVENUE)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DEPTDIM_TABLE\",\"Type\":0},{\"Name\":\"r\",\"Entity\":\"REVENUEFACT_TABLE\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"HOSPDIM_TABLE\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Department Name\"},\"Name\":\"DEPTDIM_TABLE.DEPARTMENT_NAME\",\"NativeReferenceName\":\"Department Name\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Total Revenue\"}},\"Function\":0},\"Name\":\"Sum(REVENUEFACT_TABLE.TOTAL_REVENUE)\",\"NativeReferenceName\":\"Sum of Total Revenue\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Hospital Name\"},\"Name\":\"HOSPDIM_TABLE.HOSPITAL_NAME\",\"NativeReferenceName\":\"Hospital Name\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"State\"},\"Name\":\"HOSPDIM_TABLE.STATE\",\"NativeReferenceName\":\"State\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Total Revenue\"}},\"Function\":0}}}]},\"expansionStates\":[{\"roles\":[\"ExplainBy\"],\"levels\":[{\"queryRefs\":[\"HOSPDIM_TABLE.STATE\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"HOSPDIM_TABLE\"}},\"Property\":\"State\"}}],\"isPinned\":true,\"isLocked\":true},{\"queryRefs\":[\"HOSPDIM_TABLE.HOSPITAL_NAME\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"HOSPDIM_TABLE\"}},\"Property\":\"Hospital Name\"}}],\"isPinned\":true},{\"queryRefs\":[\"DEPTDIM_TABLE.DEPARTMENT_NAME\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"DEPTDIM_TABLE\"}},\"Property\":\"Department Name\"}}],\"isPinned\":true}],\"root\":{\"identityValues\":null,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'CA'\"}}],\"isToggled\":true,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'Hospital_99'\"}}],\"isToggled\":true}]}]}}],\"columnProperties\":{\"HOSPDIM_TABLE.STATE\":{\"displayName\":\"State\"},\"HOSPDIM_TABLE.HOSPITAL_NAME\":{\"displayName\":\"Hospital Name\"},\"DEPTDIM_TABLE.DEPARTMENT_NAME\":{\"displayName\":\"Department Name\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"tree\":[{\"properties\":{\"effectiveBarsPerLevel\":{\"expr\":{\"Literal\":{\"Value\":\"3L\"}}},\"accentColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}}}],\"dataBars\":[{\"properties\":{\"positiveBarColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}},\"negativeBarColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0.6}}}}}}}],\"insights\":[{\"properties\":{\"isAINode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"data\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"HOSPDIM_TABLE\"}},\"Property\":\"State\"}},\"Right\":{\"Literal\":{\"Value\":\"'CA'\"}}}}},{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"HOSPDIM_TABLE\"}},\"Property\":\"Hospital Name\"}},\"Right\":{\"Literal\":{\"Value\":\"'Hospital_99'\"}}}}},{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"DEPTDIM_TABLE\"}},\"Property\":\"Department Name\"}},\"Right\":{\"Literal\":{\"Value\":\"'020 Emergency'\"}}}}},{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"HOSPDIM_TABLE\"}},\"Property\":\"Group Number\"}},\"Right\":{\"Literal\":{\"Value\":\"5L\"}}}}}]}}]}}}",
+          "filters": "[]",
+          "height": 331.26,
+          "width": 732.98,
+          "x": 545.79,
+          "y": 180.88,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"8d70d4fda6978ba5a3b9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":216.63425989319458,\"y\":512.1402163494454,\"z\":4000,\"width\":1064.2420922908393,\"height\":207.16965630562783,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(REVENUEFACT_TABLE.Total Revenue)\"}],\"Series\":[{\"queryRef\":\"HOSPDIM_TABLE.Hospital Name\"}],\"Tooltips\":[{\"queryRef\":\"Sum(PATIENTFACT_TABLE.Total Patients)\"}],\"Category\":[{\"queryRef\":\"Date.Date.Variation.Date Hierarchy.Year\",\"active\":true},{\"queryRef\":\"Date.Date.Variation.Date Hierarchy.Quarter\",\"active\":true},{\"queryRef\":\"Date.Date.Variation.Date Hierarchy.Month\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"REVENUEFACT_TABLE\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"HOSPDIM_TABLE\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"PATIENTFACT_TABLE\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"Date\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Total Revenue\"}},\"Function\":0},\"Name\":\"Sum(REVENUEFACT_TABLE.Total Revenue)\",\"NativeReferenceName\":\"Sum of Total Revenue\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Hospital Name\"},\"Name\":\"HOSPDIM_TABLE.Hospital Name\",\"NativeReferenceName\":\"Hospital Name\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Total Patients\"}},\"Function\":0},\"Name\":\"Sum(PATIENTFACT_TABLE.Total Patients)\",\"NativeReferenceName\":\"Sum of Total Patients\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"Date.Date.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"Date Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Quarter\"},\"Name\":\"Date.Date.Variation.Date Hierarchy.Quarter\",\"NativeReferenceName\":\"Date Quarter\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"Date.Date.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"Date Month\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"legend\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'BottomCenter'\"}}},\"showTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Revenue Trend Line By Department'\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Date\"}},\"Property\":\"Date\"}},\"type\":\"Categorical\",\"howCreated\":1,\"isHiddenInViewMode\":false},{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Date\"}},\"Property\":\"Date\"}},\"type\":\"Categorical\",\"howCreated\":1,\"isHiddenInViewMode\":false}]",
+          "height": 207.17,
+          "width": 1064.24,
+          "x": 216.63,
+          "y": 512.14,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"a04907a8e7dd3c0d7783\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.516226208407504,\"y\":166.15637409283855,\"z\":15000,\"width\":187.18882650965355,\"height\":146.1755442968643,\"tabOrder\":14000}}],\"singleVisual\":{\"visualType\":\"gauge\",\"projections\":{\"TargetValue\":[{\"queryRef\":\"REVENUEFACT_TABLE.2023 Total Revenue\"}],\"Y\":[{\"queryRef\":\"REVENUEFACT_TABLE.2024 Total Revenue\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"REVENUEFACT_TABLE\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2023 Total Revenue\"},\"Name\":\"REVENUEFACT_TABLE.2023 Total Revenue\",\"NativeReferenceName\":\"2023 Total Revenue\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2024 Total Revenue\"},\"Name\":\"REVENUEFACT_TABLE.2024 Total Revenue\",\"NativeReferenceName\":\"2024 Total Revenue\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"2024 Total Revenue\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#B3CCD1'\"}}}}},\"target\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":9,\"Percent\":0}}}}}}}],\"target\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Enterprise Revenue 2024 v 2023'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 146.18,
+          "width": 187.19,
+          "x": 10.52,
+          "y": 166.16,
+          "z": 15000.00
+        },
+        {
+          "config": "{\"name\":\"d5fcf0d51a3eb69ce7a6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":586.8054224291387,\"z\":14000,\"width\":230.30535396412432,\"height\":59.94248938792277,\"tabOrder\":13000}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(PATIENTFACT_TABLE.Total Patients)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PATIENTFACT_TABLE\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Total Patients\"}},\"Function\":0},\"Name\":\"Sum(PATIENTFACT_TABLE.Total Patients)\",\"NativeReferenceName\":\"Total Patients Seen Over Period\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Total Patients\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(PATIENTFACT_TABLE.Total Patients)\":{\"displayName\":\"Total Patients Seen Over Period\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}}}],\"card\":[{\"properties\":{\"barColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 59.94,
+          "width": 230.31,
+          "x": 0.00,
+          "y": 586.81,
+          "z": 14000.00
+        },
+        {
+          "config": "{\"name\":\"ed2cc52807c7e39ce848\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.516226208407504,\"y\":0,\"z\":15001,\"width\":72.56196083801177,\"height\":72.56196083801177,\"tabOrder\":15001}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"ACME_Hospitals_(1)9941869980320883.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 72.56,
+          "width": 72.56,
+          "x": 10.52,
+          "y": 0.00,
+          "z": 15001.00
+        },
+        {
+          "config": "{\"name\":\"ef8880d20d5e9ea25b88\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":458.5074626865672,\"z\":7000,\"width\":230.30535396412432,\"height\":53.632753662878265,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(REVENUEFACT_TABLE.Total Revenue)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"REVENUEFACT_TABLE\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Total Revenue\"}},\"Function\":0},\"Name\":\"Sum(REVENUEFACT_TABLE.Total Revenue)\",\"NativeReferenceName\":\"Total Revenue Over Period\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Total Revenue\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(REVENUEFACT_TABLE.Total Revenue)\":{\"displayName\":\"Total Revenue Over Period\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}}}],\"card\":[{\"properties\":{\"barColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#2F6974'\"}}}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 53.63,
+          "width": 230.31,
+          "x": 0.00,
+          "y": 458.51,
+          "z": 7000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
